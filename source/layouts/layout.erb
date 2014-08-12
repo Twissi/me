@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "" %></title>
+
+    <%= stylesheet_link_tag "main" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div id="triangleBackground"></div>
+    <div id="secretMessage">
+      <div class="text">
+        "Become friends with people who arent't your age. Hang out with people whose first language isn't the same as yours. Get to know someone who doesn't come from your social class. This is how you see the world. This is how you grow."
+      </div>
+    </div>
+    <div id="aboutTag"><span class="name">//:kristin-albert</span></div>
+    <div class="welcome">
+      <div class="text">
+          HELLO,<br/>
+          I am Kristin. I am glad you are here.
+          When I do something I love then I do it with passion.
+        </div>
+      </div>
+    <div>
+    <%= yield %>
+  </body>
+</html>

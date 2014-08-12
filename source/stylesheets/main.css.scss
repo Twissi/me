@@ -1,5 +1,8 @@
 $break-mobile: 320px;
 $break-tablet: 800px;
+$light-text: #808080;
+$normal-text: #454545;
+$highlight-color: #f06;
 
 *{
 	margin: 0;
@@ -10,7 +13,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	background-color: #f9f7f3;
-	color: #808080;
+	color: $normal-text;
 }
 
 @font-face {
@@ -75,7 +78,7 @@ body{
 	margin: 0 auto;
 	.text{
 		font-size: 25px;
-		color: #f06;
+		color: $highlight-color;
 		text-align: center;
 		padding: 50px 30px;
 	}
@@ -86,7 +89,7 @@ body{
 }
 
 .content-category{
-	padding: 1% 6%;
+	padding: 2% 6%;
 	border-top: 1px solid #c1c1c1;
 	&:last-child{
 		border-bottom: 1px solid #c1c1c1;
@@ -95,13 +98,66 @@ body{
 		font-size: 45px;
 		font-weight: 700;
 		.description{
+			color: $light-text;
 			font-weight: 300;
 			font-size: 30px;
 			margin-left: 1%;
 		}
 	}
 	.content{
+		.skill-bar{
+			width: 100%;
+			position: relative;
+			.description{
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 20%;
+				text-align: right;
+			}
+			.bar{
+				background-color: $normal-text;
+				width: 80%;
+				height: 20px;
+				-moz-border-radius: 5px;
+					 border-radius: 5px;
+			 	margin-bottom: 10px;
+				 &:last-child{
+				 	margin-bottom: 0;
+				 }
+				.progress{
+					background-color: $highlight-color;
+					height: 20px;
+					-moz-border-top-left-radius: 5px;
+					 	 border-top-left-radius: 5px;
+	 				-moz-border-bottom-left-radius: 5px;
+					 	 border-bottom-left-radius: 5px;
+				}
+			}
+		}
+		
+	}
+}
 
+.post{
+	padding: 2% 0;
+	.title{
+		width: 80%;
+		float: left;
+		font-size: 20px;
+	}
+	.date{
+		width: 20%;
+		float: right;
+		text-align: right;
+		font-size: 20px;
+		color: $light-text;
+	}
+	.tags{
+		color: $highlight-color;
+	}
+	.content{
+		padding: 3% 0;
 	}
 }
 

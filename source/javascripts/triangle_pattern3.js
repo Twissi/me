@@ -17,7 +17,7 @@ var trianglePattern = (function () {
 
     random = Math.floor(0 + Math.random() * options.colorArray.length);
     color = options.colorArray[random];
-    polygon = draw.polygon(coords).fill(color);
+    polygon = draw.polygon(coords).fill(color).stroke({ width: 1, color: color });
     polygon.on('mouseover', mouseoverEvent);
     triangles.push(polygon);
   };
@@ -84,6 +84,7 @@ var trianglePattern = (function () {
     randomShake: function(){
       var triangle;
 
+      console.log(Math.floor(0 + Math.random() * triangles.length-2));
       triangle = triangles[Math.floor(0 + Math.random() * triangles.length-1)];
       triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
         triangle.fill({ color: triangle.attr('fill'), opacity: 1 });

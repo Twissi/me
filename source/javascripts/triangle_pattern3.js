@@ -85,18 +85,17 @@ var trianglePattern = (function () {
       var triangle;
 
       triangle = triangles[Math.floor(0 + Math.random() * triangles.length-1)];
-
-console.log("hh");
-      triangle.animate(1000,'<>',10000).fill({ color: triangle.attr('fill'), opacity: 0 });
-      console.log("hh");
-      triangle.animate(1000,'<>',10000).fill({ color: triangle.attr('fill'), opacity: 1 });
+      triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
+        triangle.fill({ color: triangle.attr('fill'), opacity: 1 });
+        setTimeout(trianglePattern.randomShake, 2000);
+      })
     }
   };
 })();
 
 window.onload = function(){
   trianglePattern.generate("triangleBackground");
-  setTimeout(trianglePattern.randomShake(), 2000);
+  setTimeout(trianglePattern.randomShake, 2000);
 };
 
 window.onresize = function() {

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #f9f7f3;
+  color: #808080; }
+
+@font-face {
+  font-family: 'PrintClearly';
+  src: url("fonts/printclearly.ttf");
+  font-weight: normal;
+  font-style: normal; }
+#aboutTag {
+  color: #fff;
+  z-index: 999;
+  font-size: 36px;
+  position: absolute;
+  margin-top: -65px;
+  width: 100%;
+  text-align: center; }
+  #aboutTag .name {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff; }
+
+#triangleBackground {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 999; }
+
+#secretMessage {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  z-index: 1;
+  background-color: #f06;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  #secretMessage .text {
+    padding: 0 20%;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 30%; }
+    @media screen and (max-width: 320px) {
+      #secretMessage .text {
+        font-size: 15px; } }
+    @media screen and (max-width: 800px) {
+      #secretMessage .text {
+        font-size: 20px; } }
+
+.welcome {
+  width: 50%;
+  margin: 0 auto; }
+  .welcome .text {
+    font-size: 25px;
+    color: #f06;
+    text-align: center;
+    padding: 50px 30px; }
+
+.page-content {
+  padding: 0; }
+
+.content-category {
+  padding: 1% 6%;
+  border-top: 1px solid #c1c1c1; }
+  .content-category:last-child {
+    border-bottom: 1px solid #c1c1c1; }
+  .content-category .name {
+    font-size: 45px;
+    font-weight: 700; }
+    .content-category .name .description {
+      font-weight: 300;
+      font-size: 30px;
+      margin-left: 1%; }

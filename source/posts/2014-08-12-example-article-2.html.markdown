@@ -1,7 +1,7 @@
 ---
 title: example-article-2
 date: 2014-08-12 12:31 UTC
-tags:
+tags: free, bright, love
 category: life
 ---
 

@@ -13,35 +13,24 @@ per_page: 10
       <div class="post"></div>
     </div>
   </div>
-  <div class="content-category">
-    <div class="name">Projects<span class="description">This is about</span></div>
-    <div class="content">
-      <% if paginate && num_pages > 1 %>
-        <p>Page <%= page_number %> of <%= num_pages %></p>
-
-        <% if prev_page %>
-          <p><%= link_to 'Previous page', prev_page %></p>
+  <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
+    <div class="content-category">
+      <div class="name"><%= category %><span class="description">This is about</span></div>
+      <div class="content">
+        <% articles[0...5].each do |article, i| %>
+          <div class="post">
+            <div class="title"><%= article.title %></div>
+            <div class="date"><%= article.date.strftime('%b %e') %></div>
+            <div class="tags"><%= article.tags %></div>
+            <!-- use article.summary(250) if you have Nokogiri available to show just
+                 the first 250 characters -->
+            <div class="content"><%= article.body %></div>
+          </div>
         <% end %>
-      <% end %>
-
-      <% page_articles.each_with_index do |article, i| %>
-        <div class="post">
-          <div class="title"><%= article.title %></div>
-          <div class="date"><%= article.date.strftime('%b %e') %></div>
-          <div class="tags"><%= article.tags %></div>
-          <!-- use article.summary(250) if you have Nokogiri available to show just
-               the first 250 characters -->
-          <div class="content"><%= article.body %></div>
-        </div>
-      <% end %>
-
-      <% if paginate %>
-        <% if next_page %>
-          <p><%= link_to 'Next page', next_page %></p>
-        <% end %>
-      <% end %>
+      </div>
     </div>
-  </div>
+  <% end %>
+
   <div class="content-category">
     <div class="name">Life<span class="description">This is about</span></div>
     <div class="content">

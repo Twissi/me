@@ -8,12 +8,6 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "posts"
 
-  blog.custom_collections = {
-    category: {
-      link: '/categories/{category}.html',
-      template: '/category.html'
-    }
-  }
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
@@ -35,7 +29,7 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
+# page "/feed.xml", layout: false
 
 ###
 # Compass

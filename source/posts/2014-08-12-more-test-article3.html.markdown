@@ -5,3 +5,4 @@ tags: live
 category: life
 ---
 
+Use the patternTransform attribute to rotate a vertical (or horizontal) line segment. This method tiles seamlessly and uses the simplest possible path. The pattern width attribute controls how close parallel hatches are.

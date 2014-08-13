@@ -17,7 +17,7 @@ var trianglePattern = (function () {
 
     random = Math.floor(0 + Math.random() * options.colorArray.length);
     color = options.colorArray[random];
-    polygon = draw.polygon(coords).fill(color).stroke({ width: 1, color: color });
+    polygon = draw.polygon(coords).fill(color);//.stroke({ width: 1, color: color });
     polygon.on('mouseover', mouseoverEvent);
     triangles.push(polygon);
   };
@@ -60,8 +60,8 @@ var trianglePattern = (function () {
         maxColumns = 3;
       }
 
+      //options.triangleSize = Math.round(drawArea.offsetWidth / maxColumns);
       options.triangleSize = drawArea.offsetWidth / maxColumns;
-
       createDrawArea(div, drawArea.offsetWidth, options.triangleSize*maxRows);
       document.getElementById('secretMessage').style.height = options.triangleSize*maxRows + 'px';
 
@@ -84,8 +84,8 @@ var trianglePattern = (function () {
     randomShake: function(){
       var triangle;
 
-      console.log(Math.floor(0 + Math.random() * triangles.length-2));
-      triangle = triangles[Math.floor(0 + Math.random() * triangles.length-1)];
+      //console.log(Math.floor(Math.random() * triangles.length-1));
+      triangle = triangles[Math.floor(Math.random() * triangles.length-1)];
       triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
         triangle.fill({ color: triangle.attr('fill'), opacity: 1 });
         setTimeout(trianglePattern.randomShake, 2000);

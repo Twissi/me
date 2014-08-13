@@ -55,8 +55,8 @@ body{
 	background-color: #f06;
 	color: #fff;
 	-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+ 		-moz-box-sizing: border-box;
+  			box-sizing: border-box;
 	.text{
 		padding: 0 20%;
 		font-size: 20px;
@@ -89,10 +89,13 @@ body{
 }
 
 .content-category{
-	padding: 2% 6%;
+	padding: 4% 6%;
 	border-top: 1px solid #c1c1c1;
 	&:last-child{
 		border-bottom: 1px solid #c1c1c1;
+	}
+	&:nth-child(2n+1){
+		background-color: #F0EDEA;
 	}
 	.name{
 		font-size: 45px;
@@ -105,6 +108,7 @@ body{
 		}
 	}
 	.content{
+		//border: 1px solid #000;
 		.skill-bar{
 			width: 100%;
 			position: relative;
@@ -158,6 +162,43 @@ body{
 	}
 	.content{
 		padding: 3% 0;
+	}
+	span.image{
+		display: block;
+		width: 20%;
+		float: left;
+		margin-right: 3%;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.three-column{
+	.column{
+		float: left;
+		width: 33%;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+ 		-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+		&:first-child{
+			padding-right: 3%;
+		}
+		&:last-child{
+			padding-left: 3%;
+		}
+	}
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
 	}
 }
 

@@ -5,3 +5,5 @@ tags: live
 category: life
 ---
 
+<span class="image">![Alternativer Text](/images/cat.jpeg)</span>
+Es ist zu beachten, dass Markdowns Syntax innerhalb von HTML-Blöcken nicht interpretiert wird. Es kann zum Beispiel keine Betonung innerhalb von HTML-Blöcken benutzt werden.

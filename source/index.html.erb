@@ -5,6 +5,7 @@ per_page: 10
 <div class="page-content">
   <div class="content-category">
     <div class="name">Work<span class="description">This is about</span></div>
+    <div class="nav"><a href="#" class="entypo-down-open"></a><a href="#" class=""></a></div>
     <div class="content">
       <div class="three-column">
         <div class="column"><b>The CSS used for this layout</b> is 100% valid and hack free. To overcome Internet Explorer's broken box model, no</div>
@@ -16,13 +17,14 @@ per_page: 10
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
     <div class="content-category">
       <div class="name"><%= category %><span class="description">This is about</span></div>
+      <div class="nav"><a href="#" class="entypo-down-open"></a><a href="#" class="entypo-up-open"></a></div>
       <div class="content">
         <% articles[0...5].each do |article, i| %>
           <div class="post">
             <div class="title"><%= article.title %></div>
             <div class="date"><%= article.date.strftime('%b %e') %></div>
             <div class="tags">
-              <%= article.tags.map! { |tag| "#{tag}" }.join(" + "); %>
+              <%= article.tags.join(" + ") %>
             </div>
             <!-- use article.summary(250) if you have Nokogiri available to show just
                  the first 250 characters -->
@@ -35,6 +37,7 @@ per_page: 10
 
   <div class="content-category">
     <div class="name">Life<span class="description">This is about</span></div>
+    <div class="nav"><a href="#" class="entypo-down-open"></a><a href="#" class="entypo-up-open"></a></div>
     <div class="content">
       I am a passionate Frontend-Developer.
       <br/><br/>
@@ -54,8 +57,9 @@ per_page: 10
       </div>
     </div>
   </div>
-    <div class="content-category">
+  <div class="content-category">
     <div class="name">Contact<span class="description">This is about</span></div>
+    <div class="nav"><a href="#" class="entypo-up-open"></a></div>
     <div class="content">
       SAY HI!
       If you like to work with me. Leave me a note.

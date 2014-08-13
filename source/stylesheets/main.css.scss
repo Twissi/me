@@ -4,6 +4,15 @@ $light-text: #808080;
 $normal-text: #454545;
 $highlight-color: #f06;
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 30px;
+  color: $light-text;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -91,6 +100,7 @@ body{
 .content-category{
 	padding: 4% 6%;
 	border-top: 1px solid #c1c1c1;
+	position: relative;
 	&:last-child{
 		border-bottom: 1px solid #c1c1c1;
 	}
@@ -106,6 +116,16 @@ body{
 			font-size: 30px;
 			margin-left: 1%;
 		}
+	}
+	.nav{
+		a{
+			display: inline-block;
+			width: 30px;
+			text-decoration: none;
+		}
+		position: absolute;
+		top: 3%;
+		right: 0;
 	}
 	.content{
 		//border: 1px solid #000;
@@ -139,7 +159,7 @@ body{
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -184,7 +204,6 @@ body{
 	.column{
 		float: left;
 		width: 33%;
-		text-align: center;
 		-webkit-box-sizing: border-box;
  		-moz-box-sizing: border-box;
   			box-sizing: border-box;

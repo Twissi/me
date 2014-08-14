@@ -2,7 +2,7 @@
 title: Denny - can't be real
 date: 2014-08-04 21:00 UTC
 tags: bike, lifestyle
-category: lifestyle
+category: life,more then art
 ---
 
 Use the patternTransform attribute to rotate a vertical (or horizontal) line segment. This method tiles seamlessly and uses the simplest possible path. The pattern width attribute controls how close parallel hatches are.

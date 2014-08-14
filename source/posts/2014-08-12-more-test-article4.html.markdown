@@ -2,7 +2,7 @@
 title: More-test-article4
 date: 2014-08-12 21:01 UTC
 tags: lifestyle
-category: life
+category: life,more then art
 image: cat.jpeg
 ---
 

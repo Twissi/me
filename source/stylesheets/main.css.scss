@@ -162,11 +162,6 @@ body{
 		font-size: 25px;
 		text-transform: uppercase;
 		font-weight: 700;
-		&:before{
-			content: '';
-			display: block;
-			clear: both;
-		}
 	}
 	.date{
 		font-size: 15px;
@@ -176,8 +171,13 @@ body{
 		color: $highlight-color;
 		text-align: right;
 	}
-	.content{
-		padding: 3% 0;
+	.text{
+		padding-top: 3%;
+		&:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
 	}
 	span.image{
 		display: block;
@@ -188,6 +188,9 @@ body{
 			display: block;
 			width: 100%;
 		}
+	}
+	iframe{
+		margin: 3% 0;
 	}
 	&:after{
 		content: '';

@@ -15,9 +15,14 @@ $highlight-color: #f06;
 .entypo-down-open, .entypo-up-open{
 	font-size: 30px;
 }
-.entypo-address, .entypo-cc {
+.entypo-address, .entypo-cc, .entypo-mail {
 	font-size: 20px;
 	margin-right: 10px;
+}
+
+.title{
+	font-size: 18px;
+	font-weight: 400;
 }
 
 *{
@@ -187,8 +192,6 @@ a{
 		font-size: 15px;
 		color: $light-text;
 		.title{
-			font-size: 18px;
-			font-weight: 400;
 			color: $normal-text;
 		}
 		.date, .tags{
@@ -223,6 +226,30 @@ a{
 		clear: both;
 	}
 }
+
+.contact{
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	min-height: 500px;
+	.text{
+		width: 50%;
+	}
+}
+
+.socialmedia{
+	width: 100%;
+	margin-top: 40px;
+	font-size: 60px;
+	text-align: center;
+	a{
+		text-decoration: none;
+	}
+}
+
 
 
 

@@ -9,4 +9,6 @@ tags: music, vienna
 
 Mrs. Henry and the Flying Fish got me at their performance at parque del sol in St.Pölten. It was a beautiful day, the sun was shining, the park with all its decoration and people created a wonderful atmosphere and on top of that the voice of Mrs. Henry made this moment perfect. If you enjoy acoustic-pop than go for it.
 
-Check out their debut: http://mrshenry.jimdo.com/
+<span class="entypo-address"></span>[mrs.henry.jimdo.com](http://mrshenry.jimdo.com/)
+
+<span class="entypo-cc"></span>image credits: mrshenry.jimdo.com

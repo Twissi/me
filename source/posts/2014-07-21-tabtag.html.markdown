@@ -10,5 +10,6 @@ Customizing your macbook is great. Tabtag came up with the idea of using the glo
 They have many different designs and you can apply and remove tags if you want.
 This project was founded with kickstarter and is now in the market.
 
-Get your tabtag here: [tabtag.com](http://tabtag.com)
+<span class="entypo-address"></span>[tabtag.com](http://tabtag.com)
 
+<span class="entypo-cc"></span>image credits: [kickstarter.com](https://www.kickstarter.com/projects/tabtag/tabtag-glowing-removable-and-reusable-macbook-stic)

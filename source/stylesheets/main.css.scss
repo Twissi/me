@@ -9,8 +9,15 @@ $highlight-color: #f06;
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
-  font-size: 30px;
   color: $light-text;
+}
+
+.entypo-down-open, .entypo-up-open{
+	font-size: 30px;
+}
+.entypo-address, .entypo-cc {
+	font-size: 20px;
+	margin-right: 10px;
 }
 
 *{
@@ -22,6 +29,10 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	background-color: #f9f7f3;
+	color: $normal-text;
+}
+
+a{
 	color: $normal-text;
 }
 
@@ -170,6 +181,7 @@ body{
 	  	background-position: 50% 50%;
 	}
 	.text{
+		line-height: 1.6;
 		margin-top: -3px;
 		margin-left: 33%;
 		font-size: 15px;
@@ -183,9 +195,6 @@ body{
 			text-align: right;
 			font-size: 12px;
 		}
-	}
-	iframe{
-		margin: 3% 0;
 	}
 	&:after{
 		content: '';

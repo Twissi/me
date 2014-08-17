@@ -1,0 +1,10 @@
+---
+title: Cabaret sign
+date: 2014-07-17 21:11 UTC
+tags: art, festival
+category: My Projects
+image: cabaret.jpg
+---
+
+This lightbox was created for the cabaret stage of the "Drunken and sobriety" camp at Nowhere. It has different animations which makes ist flash, glow and change colors. It was programmed with the arduino using an LED strip. The box is made out of wood and plexiglass.
+

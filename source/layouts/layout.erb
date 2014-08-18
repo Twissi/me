@@ -11,20 +11,16 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div id="triangleBackground"></div>
-    <div id="secretMessage">
-      <div class="text">
-        "<%= get_quote %>"
-      </div>
-    </div>
-    <div id="aboutTag"><span class="name">//:kristin-albert</span></div>
-    <div class="welcome">
-      <div class="text">
-          HELLO, I am Kristin. <br/>I am glad you are here.
-          When I do something I love then I do it with passion.
+    <div class="header">
+      <%= image_tag 'logo.png', :class => 'logo'%>
+      <div id="triangleBackground"></div>
+      <div id="secretMessage">
+        <div class="text">
+          <%= get_quote %>
         </div>
       </div>
-    <div>
+    </div>
+    <!-- <div id="aboutTag"><span class="name">Welcome to kristin-albert.de</span></div> -->
     <%= yield %>
   </body>
 </html>

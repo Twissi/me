@@ -53,7 +53,7 @@ var trianglePattern = (function () {
       var l, r, maxColumns, maxRows, drawArea;
 
       drawArea = document.getElementById(div);
-      maxRows = 4;
+      maxRows = 3;
 
       maxColumns = Math.ceil(drawArea.offsetWidth/90);
       if( maxColumns < 3 ){
@@ -81,22 +81,26 @@ var trianglePattern = (function () {
       trianglePattern.generate(div);
     },
 
-    randomShake: function(){
+    randomShow: function(){
       var triangle;
 
-      //console.log(Math.floor(Math.random() * triangles.length-1));
-      triangle = triangles[Math.floor(Math.random() * triangles.length-1)];
-      triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
-        triangle.fill({ color: triangle.attr('fill'), opacity: 1 });
-        setTimeout(trianglePattern.randomShake, 2000);
-      })
+      console.log(Math.floor(Math.random() * triangles.length));
+      triangle = triangles[Math.floor(Math.random() * triangles.length)];
+      if(triangle.attr('opacity') != 0){
+        triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
+          //triangle.fill({ color: triangle.attr('fill'), opacity: 1 });
+          setTimeout(trianglePattern.randomShow, 2000);
+        })
+      }else{
+        setTimeout(trianglePattern.randomShow, 500);
+      }
     }
   };
 })();
 
 window.onload = function(){
   trianglePattern.generate("triangleBackground");
-  setTimeout(trianglePattern.randomShake, 2000);
+  setTimeout(trianglePattern.randomShow, 2000);
 };
 
 window.onresize = function() {

@@ -14,13 +14,12 @@
     <div class="header">
       <%= image_tag 'logo.png', :class => 'logo'%>
       <div id="triangleBackground"></div>
-      <div id="secretMessage">
+      <div id="secretMessage" class="loading">
         <div class="text">
           <%= get_quote %>
         </div>
       </div>
     </div>
-    <!-- <div id="aboutTag"><span class="name">Welcome to kristin-albert.de</span></div> -->
     <%= yield %>
   </body>
 </html>

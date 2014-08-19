@@ -1,5 +1,6 @@
 $break-mobile: 320px;
 $break-tablet: 800px;
+$break-hugescreen: 1400px;
 $light-text: #808080;
 $normal-text: #454545;
 $highlight-color: #f06;
@@ -10,6 +11,23 @@ $highlight-color: #f06;
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
   color: $light-text;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .entypo-down-open, .entypo-up-open{
@@ -39,20 +57,6 @@ body{
 
 a{
 	color: $normal-text;
-}
-
-#aboutTag{
-	color: #fff;
-	z-index: 999;
-	font-size: 36px;
-	position: absolute;
-	margin-top: -65px;
-	width: 100%;
-	text-align: center;
-	.name{
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
-	}
 }
 
 .header{
@@ -85,6 +89,25 @@ a{
 		-webkit-box-sizing: border-box;
 	 		-moz-box-sizing: border-box;
 	  			box-sizing: border-box;
+		&.loading {
+			padding: 8% 20%;
+			text-align: center;
+			font-size: 20px;
+			&:after{
+				content: 'Loading';
+				-webkit-animation-name: pulse;
+				animation-name: pulse;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+				-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+			}
+			.text{
+				display: none;
+			}
+		}
 		.text{
 			padding: 8% 20%;
 			font-size: 20px;
@@ -131,6 +154,9 @@ a{
 	padding: 4% 6%;
 	border-top: 1px solid #c1c1c1;
 	position: relative;
+	@media screen and (min-width: $break-hugescreen) {
+		padding: 4% 15%;
+	}
 	&:last-child{
 		border-bottom: 1px solid #c1c1c1;
 	}

@@ -100,6 +100,7 @@ var trianglePattern = (function () {
 
 window.onload = function(){
   trianglePattern.generate("triangleBackground");
+  document.getElementById('secretMessage').className = "";
   setTimeout(trianglePattern.randomShow, 2000);
 };
 

@@ -100,6 +100,9 @@ var trianglePattern = (function () {
 
 window.onload = function(){
   trianglePattern.generate("triangleBackground");
+  // add animation class for zooming
+  document.getElementById('triangleBackground').className = "zoomin";
+    // remove animation class for preloading
   document.getElementById('secretMessage').className = "";
   setTimeout(trianglePattern.randomShow, 2000);
 };

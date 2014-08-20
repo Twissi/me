@@ -7,11 +7,7 @@ $highlight-color: #f06;
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-  color: $light-text;
-}
+/* animations */
 
 @-webkit-keyframes pulse {
   0% {
@@ -20,7 +16,7 @@ $highlight-color: #f06;
   }
 
   50% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
   }
 
@@ -28,6 +24,57 @@ $highlight-color: #f06;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: $light-text;
 }
 
 .entypo-down-open, .entypo-up-open{
@@ -79,6 +126,14 @@ a{
 		height: auto;
 		overflow: hidden;
 		z-index: 999;
+		&.zoomin{
+			-webkit-animation-name: zoomIn;
+			animation-name: zoomIn;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
 	}
 
 	#secretMessage{

@@ -84,7 +84,6 @@ var trianglePattern = (function () {
     randomShow: function(){
       var triangle;
 
-      console.log(Math.floor(Math.random() * triangles.length));
       triangle = triangles[Math.floor(Math.random() * triangles.length)];
       if(triangle.attr('opacity') != 0){
         triangle.animate(800).fill({ color: triangle.attr('fill'), opacity: 0 }).after(function() {
@@ -97,18 +96,5 @@ var trianglePattern = (function () {
     }
   };
 })();
-
-window.onload = function(){
-  trianglePattern.generate("triangleBackground");
-  // add animation class for zooming
-  document.getElementById('triangleBackground').className = "fadein";
-    // remove animation class for preloading
-  document.getElementById('secretMessage').className = "";
-  setTimeout(trianglePattern.randomShow, 2000);
-};
-
-window.onresize = function() {
-  trianglePattern.update("triangleBackground");
-};
 
 

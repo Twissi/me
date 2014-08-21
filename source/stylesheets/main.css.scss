@@ -46,27 +46,22 @@ $highlight-color: #f06;
   }
 }
 
-@-webkit-keyframes zoomIn {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes zoomIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    -ms-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  100% {
     opacity: 1;
   }
 }
@@ -126,11 +121,11 @@ a{
 		height: auto;
 		overflow: hidden;
 		z-index: 999;
-		&.zoomin{
-			-webkit-animation-name: zoomIn;
-			animation-name: zoomIn;
-			-webkit-animation-duration: 1s;
-			animation-duration: 1s;
+		&.fadein{
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+			-webkit-animation-duration: 2s;
+			animation-duration: 2s;
 			-webkit-animation-fill-mode: both;
 			animation-fill-mode: both;
 		}

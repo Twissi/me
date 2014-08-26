@@ -217,6 +217,12 @@ a{
 	&:nth-child(2n+1){
 		background-color: #F0EDEA;
 	}
+	.center{
+		text-align: center;
+		ul{
+			display: inline-block;
+		}
+	}
 	.name{
 		font-size: 45px;
 		font-weight: 700;
@@ -242,16 +248,17 @@ a{
 		.skill-bar{
 			width: 100%;
 			position: relative;
+			margin: 5px 0;
 			.description{
-				position: absolute;
-				right: 0;
-				top: 0;
-				width: 20%;
+				font-size: 15px;
+				float: right;
+				width: 40%;
 				text-align: right;
 			}
 			.bar{
+				float: left;
 				background-color: $normal-text;
-				width: 80%;
+				width: 60%;
 				height: 20px;
 				-moz-border-radius: 5px;
 					 border-radius: 5px;
@@ -267,6 +274,11 @@ a{
 	 				-moz-border-bottom-left-radius: 5px;
 					 	 border-bottom-left-radius: 5px;
 				}
+			}
+			&:after{
+				content: '';
+				display: block;
+				clear: both;
 			}
 		}
 
@@ -308,6 +320,7 @@ a{
 }
 
 .three-column{
+	line-height: 1.6;
 	.column{
 		float: left;
 		width: 33%;

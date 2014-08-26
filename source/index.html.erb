@@ -24,6 +24,29 @@ per_page: 10
       </div>
     </div>
   </div>
+  <div class="content-category">
+    <div class="content">
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>The teamwork was highly professional and very inspiring
+        </div>
+        <div class="collegue">Marco Schymura (Mobile Web Lead Developer CELLULAR)</div>
+        
+      </div>
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>I have worked with Kristin for about 3 years on several international projects. She showed extraordinary expertise in her field, great work attitude and she was always an invaluable member of our team: both social and technical.
+        </div>
+        <div class="collegue">Jakob Maul (Projectmanager CELLULAR)</div>
+      </div>
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>I experienced Kristin as a highly competent and motivated developer. She combines perfect knowlege of mobile web development with social competence. Our customers were always very satisfied, when Kristin was heading the implementation.
+        </div>
+        <div class="collegue">Thomas Wedl (MVNO Manager UPC Austria)</div>
+      </div>
+    </div>
+  </div>
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
     <div class="content-category">
       <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>

@@ -79,6 +79,10 @@ $highlight-color: #f06;
 	font-size: 20px;
 	margin-right: 10px;
 }
+.entypo-quote{
+	font-size: 35px;
+	margin-right: 10px;
+}
 
 .title{
 	font-size: 18px;
@@ -321,6 +325,18 @@ a{
 		content: '';
 		display: block;
 		clear: both;
+	}
+}
+
+.reference{
+	margin: 20px 0;
+	.quote{
+		font-size: 20px;
+		margin: 15px 0;
+	}
+	.collegue{
+		font-size: 15px;
+		text-align: right;
 	}
 }
 

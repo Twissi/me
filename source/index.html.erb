@@ -28,7 +28,34 @@ per_page: 10
       </div>
     </div>
   </div>
+
   <div class="content-category">
+    <div class="name">Quotes</div>
+    <div class="content">
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>The teamwork was highly professional and very inspiring
+        </div>
+        <div class="collegue">Marco Schymura (Mobile Web Lead Developer CELLULAR)</div>
+        
+      </div>
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>I have worked with Kristin for about 3 years on several international projects. She showed extraordinary expertise in her field, great work attitude and she was always an invaluable member of our team: both social and technical.
+        </div>
+        <div class="collegue">Jakob Maul (Projectmanager CELLULAR)</div>
+      </div>
+      <div class="reference">
+        <div class="quote">
+          <span class="entypo-quote"></span>I experienced Kristin as a highly competent and motivated developer. She combines perfect knowlege of mobile web development with social competence. Our customers were always very satisfied, when Kristin was heading the implementation.
+        </div>
+        <div class="collegue">Thomas Wedl (MVNO Manager UPC Austria)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-category">
+    <div class="name">About</div>
     <div class="content">
       <div class="two-column">
         <div class="column">
@@ -65,29 +92,65 @@ per_page: 10
       </div>
     </div>
   </div>
-  <div class="content-category">
+    <div class="content-category">
+    <div class="name">CV</div>
     <div class="content">
-      <div class="reference">
-        <div class="quote">
-          <span class="entypo-quote"></span>The teamwork was highly professional and very inspiring
-        </div>
-        <div class="collegue">Marco Schymura (Mobile Web Lead Developer CELLULAR)</div>
-        
-      </div>
-      <div class="reference">
-        <div class="quote">
-          <span class="entypo-quote"></span>I have worked with Kristin for about 3 years on several international projects. She showed extraordinary expertise in her field, great work attitude and she was always an invaluable member of our team: both social and technical.
-        </div>
-        <div class="collegue">Jakob Maul (Projectmanager CELLULAR)</div>
-      </div>
-      <div class="reference">
-        <div class="quote">
-          <span class="entypo-quote"></span>I experienced Kristin as a highly competent and motivated developer. She combines perfect knowlege of mobile web development with social competence. Our customers were always very satisfied, when Kristin was heading the implementation.
-        </div>
-        <div class="collegue">Thomas Wedl (MVNO Manager UPC Austria)</div>
+      <div class="center">
+        <div class="title">2012 - 2014 CELLULAR</div>
+        <ul>
+          <li>developing mobile web solutions</li>
+          <li></li>
+        </ul>
+        <div class="title">2009 - 2012 Fraunhofer ESK</div>
+        <ul>
+          <li>mobile and android development</li>
+          <li></li>
+        </ul>
+        <div class="title">before 2009 Study</div>
+
+        <button>Get full cv</button>
       </div>
     </div>
   </div>
+
+  <div class="content-category">
+    <div class="name">Skills</div>
+    <div class="content">
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 95%"></div></div>
+        <div class="description">Mobile Web</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 95%"></div></div>
+        <div class="description">HTML5/CSS3</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+        <div class="description">Rails/PHP</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 70%"></div></div>
+        <div class="description">object-oriented JavaScript and jQuery</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+        <div class="description">Task Automation, Preprocessing (grunt, sass)</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 50%"></div></div>
+        <div class="description">JavaScript MVC frameworks</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 20%"></div></div>
+        <div class="description">Test driven development</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+        <div class="description">Tools (GIT, Photoshop)</div>
+      </div>
+    </div>
+  </div>
+
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
     <div class="content-category">
       <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>
@@ -107,28 +170,6 @@ per_page: 10
     </div>
   <% end %>
 
-  <div class="content-category">
-    <div class="name">Life<span class="description">This is about</span></div>
-    <div class="nav"><a href="#" class="entypo-down-open"></a><a href="#" class="entypo-up-open"></a></div>
-    <div class="content">
-      I am a passionate Frontend-Developer.
-      <br/><br/>
-      Skills
-      <br/><br/>
-      <div class="skill-bar">
-        <div class="bar"><div class="progress" style="width: 50%"></div></div>
-        <div class="description">CSS/HTML</div>
-      </div>
-      <div class="skill-bar">
-        <div class="bar"><div class="progress" style="width: 20%"></div></div>
-        <div class="description">SSSY</div>
-      </div>
-      <div class="skill-bar">
-        <div class="bar"><div class="progress" style="width: 80%"></div></div>
-        <div class="description">Cool Stuff</div>
-      </div>
-    </div>
-  </div>
   <div class="content-category">
     <div class="name">Contact<span class="description">Get in touch</span></div>
     <div class="nav"><a href="#" class="entypo-up-open"></a></div>

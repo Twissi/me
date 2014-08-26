@@ -328,14 +328,38 @@ a{
 	}
 }
 
+.two-column{
+	.column{
+		float: left;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+ 		-moz-box-sizing: border-box;
+  			box-sizing: border-box;
+		&:first-child{
+			padding-right: 5%;
+		}
+	}
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+ul{
+	margin-left: 20px;
+	li{
+		margin: 10px 0;
+	}
+}
+
 .reference{
 	margin: 20px 0;
 	.quote{
-		font-size: 20px;
 		margin: 15px 0;
 	}
 	.collegue{
-		font-size: 15px;
+		font-size: 12px;
 		text-align: right;
 	}
 }

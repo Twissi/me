@@ -72,9 +72,6 @@ $highlight-color: #f06;
   color: $light-text;
 }
 
-.entypo-down-open, .entypo-up-open{
-	font-size: 30px;
-}
 .entypo-address, .entypo-cc, .entypo-mail, .entypo-megaphone {
 	font-size: 20px;
 	margin-right: 10px;
@@ -105,8 +102,17 @@ a{
 	color: $normal-text;
 }
 
+.nav{
+	padding: 1%;
+	text-align: right;
+	font-size: 15px;
+	font-weight: 400;
+	a{
+		margin-left: 2%;
+		text-decoration: none;
+	}
+}
 .header{
-	margin-top: 15px;
 	position: relative;
 	.logo{
 		position: absolute;
@@ -232,16 +238,6 @@ a{
 			font-size: 30px;
 			margin-left: 1%;
 		}
-	}
-	.nav{
-		a{
-			display: inline-block;
-			width: 30px;
-			text-decoration: none;
-		}
-		position: absolute;
-		top: 3%;
-		right: 2%;
 	}
 	.content{
 		padding: 5% 0;

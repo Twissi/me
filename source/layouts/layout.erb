@@ -11,10 +11,6 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="nav">
-      <a href="">Work</a>
-      <a href="">Contact</a>
-    </div>
     <div class="header">
       <%= image_tag 'logo.png', :class => 'logo'%>
       <div id="triangleBackground"></div>
@@ -22,6 +18,23 @@
         <div class="text"></div>
       </div>
     </div>
+    <div class="nav">
+      <a data-scroll href="#nav-whatothersay">What other say</a>
+      <a data-scroll href="#nav-whatmatters">What matters</a>
+      <a data-scroll href="#nav-resume">Resume</a>
+      <a data-scroll href="#nav-tools">Tools</a>
+      <a data-scroll href="#nav-resources">Resources</a>
+      <a data-scroll href="#nav-sideprojects">Side projects</a>
+      <a data-scroll data-options='{"speed": 900}' href="#nav-contact">Contact</a>
+    </div>
+
     <%= yield %>
+
+    <script>
+      smoothScroll.init({
+        speed: 600, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutQuart', // Easing pattern to use
+      });
+    </script>
   </body>
 </html>

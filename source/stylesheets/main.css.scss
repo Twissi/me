@@ -18,6 +18,12 @@ $highlight-color: #f06;
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
+.border-box{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /* animations */
 
 @-webkit-keyframes pulse {
@@ -107,6 +113,7 @@ body{
 	font-weight: 300;
 	background-color: #f9f7f3;
 	color: $normal-text;
+	line-height: 1.7;
 }
 
 a{
@@ -118,6 +125,7 @@ a{
 	text-align: right;
 	font-size: 15px;
 	font-weight: 400;
+	text-transform: uppercase;
 	a{
 		margin-left: 2%;
 		text-decoration: none;
@@ -131,7 +139,7 @@ a{
 		top: 0;
 		left: 10px;
 		z-index: 1000;
-		width: 160px;
+		width: 170px;
 		height: 40px;
 	}
 	#triangleBackground{
@@ -157,9 +165,7 @@ a{
 		z-index: 1;
 		background-color: #f06;
 		color: #fff;
-		-webkit-box-sizing: border-box;
-	 		-moz-box-sizing: border-box;
-	  			box-sizing: border-box;
+		@extend .border-box;
 		&.loading {
 			padding: 8% 20%;
 			text-align: center;
@@ -180,7 +186,7 @@ a{
 			}
 		}
 		.text{
-			padding: 8% 20%;
+			padding: 5% 20%;
 			font-size: 20px;
 			text-align: center;
 			@media screen and (max-width: $break-mobile) {
@@ -235,12 +241,6 @@ a{
 		content: '';
 		@include triangle(50px, $highlight-color);
 	}
-	.center{
-		text-align: center;
-		ul{
-			display: inline-block;
-		}
-	}
 	.name{
 		font-size: 45px;
 		font-weight: 700;
@@ -251,6 +251,38 @@ a{
 	.content{
 		padding: 0;
 		position: relative;
+		.resource-bar{
+			width: 100%;
+			background-color: $normal-text;
+			height: 30px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			.timespan{
+				@extend .border-box;
+				display: inline-block;
+				background-color: $highlight-color;
+				height: 30px;
+				font-size: 15px;
+				color: white;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				padding: 2px 5px;
+				text-align: center;
+				&:first-child{
+					-moz-border-top-left-radius: 5px;
+					 	 border-top-left-radius: 5px;
+	 				-moz-border-bottom-left-radius: 5px;
+					 	 border-bottom-left-radius: 5px;
+				}
+				&:last-child{
+					-moz-border-top-right-radius: 5px;
+					 	 border-top-right-radius: 5px;
+	 				-moz-border-bottom-right-radius: 5px;
+					 	 border-bottom-right-radius: 5px;
+				}
+			}
+		}
 		.skill-bar{
 			width: 100%;
 			position: relative;
@@ -279,6 +311,12 @@ a{
 					 	 border-top-left-radius: 5px;
 	 				-moz-border-bottom-left-radius: 5px;
 					 	 border-bottom-left-radius: 5px;
+					&.full{
+						-moz-border-top-right-radius: 5px;
+						border-top-right-radius: 5px;
+						-moz-border-bottom-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+					}
 				}
 			}
 			&:after{
@@ -288,6 +326,23 @@ a{
 			}
 		}
 
+	}
+}
+
+.center{
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+	display: block;
+}
+
+.resume{
+	.description{
+		margin-left: 200px;
+	}
+	.date{
+		display: inline-block;
+		width: 200px;
 	}
 }
 
@@ -326,13 +381,10 @@ a{
 }
 
 .three-column{
-	line-height: 1.6;
 	.column{
 		float: left;
 		width: 33%;
-		-webkit-box-sizing: border-box;
- 		-moz-box-sizing: border-box;
-  			box-sizing: border-box;
+		@extend .border-box;
 		&:first-child{
 			padding-right: 3%;
 		}
@@ -351,9 +403,7 @@ a{
 	.column{
 		float: left;
 		width: 50%;
-		-webkit-box-sizing: border-box;
- 		-moz-box-sizing: border-box;
-  			box-sizing: border-box;
+		@extend .border-box;
 		&:first-child{
 			padding-right: 5%;
 		}

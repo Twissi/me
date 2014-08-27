@@ -5,6 +5,17 @@ $light-text: #808080;
 $normal-text: #454545;
 $highlight-color: #f06;
 
+@mixin triangle($size, $color){
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: $size $size 0 0;
+	border-color: $color transparent transparent transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* animations */
@@ -181,9 +192,6 @@ a{
 .welcome{
 	width: 100%;
 	position: relative;
-	background-size: 200px auto;
-	background-repeat: no-repeat;
-	background-position: 90% 125%;
 	.text, .text2{
 		font-size: 25px;
 		text-align: center;
@@ -205,7 +213,7 @@ a{
 }
 
 .content-category{
-	padding: 4% 6%;
+	padding: 6%;
 	border-top: 1px solid #c1c1c1;
 	position: relative;
 	@media screen and (min-width: $break-hugescreen) {
@@ -217,6 +225,10 @@ a{
 	&:nth-child(2n+1){
 		background-color: #F0EDEA;
 	}
+	&:before{
+		content: '';
+		@include triangle(50px, $highlight-color);
+	}
 	.center{
 		text-align: center;
 		ul{
@@ -226,12 +238,9 @@ a{
 	.name{
 		font-size: 45px;
 		font-weight: 700;
-		.description{
-			color: $light-text;
-			font-weight: 300;
-			font-size: 30px;
-			margin-left: 1%;
-		}
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 6%;
 	}
 	.nav{
 		a{
@@ -244,7 +253,8 @@ a{
 		right: 2%;
 	}
 	.content{
-		padding: 5% 0;
+		padding: 0;
+		position: relative;
 		.skill-bar{
 			width: 100%;
 			position: relative;

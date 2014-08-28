@@ -1,15 +1,19 @@
 <div class="welcome">
-  <div class="text">
+  <div class="headline">
     <span class="highlight">HELLO</span>,
     I'm Kristin. I'm <span class="highlight">web developer</span>,<br/><span class="highlight">mobile enthusiast</span> and I love to create <span class="highlight">awesomeness</span>.
   </div>
-  <div class="text2">
+  <div class="subline">
     I got unused power for new projects left.<br/>
     <span class="entypo-megaphone"></span><a data-scroll data-options='{"speed": 900}' href="#nav-resources">Find out more.</a>
   </div>
 </div>
-<div id="nav-whoiam" class="page-content">
-  <div class="content-category">
+<div class="page-content">
+  <div id="nav-whoiam" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-whatmatters" class="entypo-down-open"></a>
+      <a data-scoll href="#" class="entypo-up-open"></a>
+    </div>
     <div class="content">
       <div class="two-column">
         <div class="column">
@@ -25,24 +29,28 @@
     <div class="content">
       <div class="three-column">
         <div class="column">
-          I love beautiful things. Art, furniture, digital designs. I also love food from all over the world. Things that stimulate our senses.
+          I <span class="entypo-heart"></span> beautiful things. Art, furniture, digital designs. I also love food from all over the world. Things that stimulate our senses.
         </div>
         <div class="column">
-          I love my bike and I love traveling. I am more a mountain then a sea person. Nature fascinates me and it makes me breath. 
+          I <span class="entypo-heart"></span> my bike and I love traveling. I am more a mountain then a sea person. Nature fascinates me and it makes me breath. 
         </div>
         <div class="column">
-          I love people who work hard for their visions. I love women that inspire me and I care a lot about friendship.
+          I <span class="entypo-heart"></span> people who work hard for their visions. I love women that inspire me and I care a lot about friendship.
         </div>
       </div>
     </div>
   </div>
 </div>
 <div id="nav-whatmatters" class="content-category">
+  <div class="nav">
+    <a data-scoll href="#nav-whatothersay" class="entypo-down-open"></a>
+    <a data-scoll href="#nav-whoiam" class="entypo-up-open"></a>
+  </div>
   <div class="name">What matters</div>
   <div class="content">
     <div class="two-column">
       <div class="column">
-        <div class="title"><span class="entypo-search"></span> What I am looking for</div><br/>
+        <div class="title"><span class="entypo-search"></span> What I am looking for</div>
         <ul>
           <li>projects in the field of mobile</li>
           <li>motived, young team</li>
@@ -58,7 +66,7 @@
         </ul>
       </div>
       <div class="column">
-        <div class="title"><span class="entypo-heart-empty"></span> What describes me</div><br/>
+        <div class="title"><span class="entypo-heart-empty"></span> What describes me</div>
         <ul>
           <li>web and mobile technologies fascinate me</li>
           <li>I have the vision to make things work</li>
@@ -76,6 +84,10 @@
 </div>
 
   <div id="nav-whatothersay" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-resume" class="entypo-down-open"></a>
+      <a data-scoll href="#nav-whatmatters" class="entypo-up-open"></a>
+    </div>
     <div class="name">What other say</div>
     <div class="content">
       <div class="reference">
@@ -100,19 +112,24 @@
   </div>
 
   <div id="nav-resume" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-tools" class="entypo-down-open"></a>
+      <a data-scoll href="#nav-whatothersay" class="entypo-up-open"></a>
+    </div>
     <div class="name">Resume</div>
     <div class="content">
       <div class="resume">
-        <div class="title"><span class="date">2014 - today</span>Freelancer, Vienna</div>
+        <div class="date">2014 - today</div>
+        <div class="description"><div class="title">Freelancer, Vienna</div></div>
 
-        <div class="title"><span class="date">2011 - 2014</span>CELLULAR, Vienna</div>
-        <div class="description">Working on Mobile Web projects in the field sports, telecommunication, shopping and lifestyle.</div>
+        <div class="date">2011 - 2014</div>
+        <div class="description"><div class="title">CELLULAR, Vienna</div>Working on Mobile Web projects in the field sports, telecommunication, shopping and lifestyle.</div>
 
-        <div class="title"><span class="date">2009 - 2011</span>Fraunhofer ESK, Munich</div>
-        <div class="description">Developing Android Apps and Web Applications research related.</div>
+        <div class="date">2009 - 2011</div>
+        <div class="description"><div class="title">Fraunhofer ESK, Munich</div>Developing Android Apps and Web Applications research related.</div>
 
-        <div class="title"><span class="date">earlier then 2009</span>TU Dresden, Dresden</div>
-        <div class="description">Studying media computer science. Working on digital, print and web projects.</div>
+        <div class="date">earlier then 2009</div>
+        <div class="description"><div class="title">TU Dresden, Dresden</div>Studying media computer science. Working on digital, print and web projects.</div>
 
         <br/><br/>
         <span class="entypo-mail"></span><a href="mailto:ich@kristin-albert.de?subject=Request Resume">Get full resume with project details</a>
@@ -121,6 +138,10 @@
   </div>
 
   <div id="nav-tools" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-resources" class="entypo-down-open"></a>
+      <a data-scoll href="#nav-resume" class="entypo-up-open"></a>
+    </div>
     <div class="name">Tools</div>
     <div class="content">
       In the <b>last 3 years</b> I worked on over 10 mobile projects using these technologies. 
@@ -146,28 +167,32 @@
         <div class="description">Ruby / Ruby on Rails</div>
       </div>
       <div class="skill-bar">
-        <div class="bar"><div class="progress" style="width: 10%"></div></div>
+        <div class="bar"><div class="progress" style="width: 50%"></div></div>
         <div class="description">JavaScript MVC frameworks</div>
       </div>
       <div class="skill-bar">
         <div class="bar"><div class="progress full" style="width: 100%"></div></div>
         <div class="description">Git</div>
       </div>
-      <br/><br/>
-      <%= image_tag("HTML5.png", class: "center") %>
+      <br/>
+      <%= image_tag("HTML5.png", class: "center", width: "50px") %>
     </div>
   </div>
 
   <div id="nav-resources" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-sideprojects" class="entypo-down-open"></a>
+      <a data-scoll href="#nav-tools" class="entypo-up-open"></a>
+    </div>
     <div class="name">Time Resources</div>
     <div class="content">
       Currently I got free resources to work with you on your project.<br/>
       Get in <a data-scroll href="#nav-contact">contact</a>.
       <br/><br/>
       <div class="resource-bar">
-        <div class="timespan" style="width: 25%">Learning Swift</div>
-        <div class="timespan" style="width: 20%">Angular project</div>
-        <div class="timespan" style="width: 15%">Rails Girls Orga</div>
+        <div class="timespan" style="width: 25%"><span class="text">Learning Swift</span></div>
+        <div class="timespan" style="width: 20%"><span class="text">Angular project</span></div>
+        <div class="timespan" style="width: 15%"><span class="text">Rails Girls Orga</span></div>
       </div>
       <br/>
     </div>
@@ -175,6 +200,10 @@
 
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
     <div id="nav-sideprojects" class="content-category">
+      <div class="nav">
+        <a data-scoll href="#nav-contact" class="entypo-down-open"></a>
+        <a data-scoll href="#nav-resources" class="entypo-up-open"></a>
+      </div>
       <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>
       <div class="content">
         <% articles[0...5].each do |article, i| %>
@@ -192,6 +221,9 @@
   <% end %>
 
   <div id="nav-contact" class="content-category">
+    <div class="nav">
+      <a data-scoll href="#nav-sideprojects" class="entypo-up-open"></a>
+    </div>
     <div class="name">Contact</div>
     <div class="content">
       <div class="contact" style="background-image: url('<%= asset_url 'images/kristinalbert_circle.png' %>')">

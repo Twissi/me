@@ -11,8 +11,7 @@
 <div class="page-content">
   <div id="nav-whoiam" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-whatmatters" class="entypo-down-open"></a>
-      <a data-scoll href="#" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-whatmatters" class="entypo-down-open"></a>
     </div>
     <div class="content">
       <div class="two-column">
@@ -43,8 +42,8 @@
 </div>
 <div id="nav-whatmatters" class="content-category">
   <div class="nav">
-    <a data-scoll href="#nav-whatothersay" class="entypo-down-open"></a>
-    <a data-scoll href="#nav-whoiam" class="entypo-up-open"></a>
+    <a data-scroll href="#nav-whatothersay" class="entypo-down-open"></a>
+    <a data-scroll href="#nav-whoiam" class="entypo-up-open"></a>
   </div>
   <div class="name">What matters</div>
   <div class="content">
@@ -85,8 +84,8 @@
 
   <div id="nav-whatothersay" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-resume" class="entypo-down-open"></a>
-      <a data-scoll href="#nav-whatmatters" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-resume" class="entypo-down-open"></a>
+      <a data-scroll href="#nav-whatmatters" class="entypo-up-open"></a>
     </div>
     <div class="name">What other say</div>
     <div class="content">
@@ -113,8 +112,8 @@
 
   <div id="nav-resume" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-tools" class="entypo-down-open"></a>
-      <a data-scoll href="#nav-whatothersay" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-tools" class="entypo-down-open"></a>
+      <a data-scroll href="#nav-whatothersay" class="entypo-up-open"></a>
     </div>
     <div class="name">Resume</div>
     <div class="content">
@@ -139,8 +138,8 @@
 
   <div id="nav-tools" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-resources" class="entypo-down-open"></a>
-      <a data-scoll href="#nav-resume" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-resources" class="entypo-down-open"></a>
+      <a data-scroll href="#nav-resume" class="entypo-up-open"></a>
     </div>
     <div class="name">Tools</div>
     <div class="content">
@@ -181,8 +180,8 @@
 
   <div id="nav-resources" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-sideprojects" class="entypo-down-open"></a>
-      <a data-scoll href="#nav-tools" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-sideprojects" class="entypo-down-open"></a>
+      <a data-scroll href="#nav-tools" class="entypo-up-open"></a>
     </div>
     <div class="name">Time Resources</div>
     <div class="content">
@@ -201,8 +200,8 @@
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
     <div id="nav-sideprojects" class="content-category">
       <div class="nav">
-        <a data-scoll href="#nav-contact" class="entypo-down-open"></a>
-        <a data-scoll href="#nav-resources" class="entypo-up-open"></a>
+        <a data-scroll href="#nav-contact" class="entypo-down-open"></a>
+        <a data-scroll href="#nav-resources" class="entypo-up-open"></a>
       </div>
       <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>
       <div class="content">
@@ -222,7 +221,7 @@
 
   <div id="nav-contact" class="content-category">
     <div class="nav">
-      <a data-scoll href="#nav-sideprojects" class="entypo-up-open"></a>
+      <a data-scroll href="#nav-sideprojects" class="entypo-up-open"></a>
     </div>
     <div class="name">Contact</div>
     <div class="content">

@@ -57,6 +57,13 @@ body{
 	}
 }
 
+img.html5{
+	width: 10%;
+	@media screen and (max-width: $break-mobile) {
+		width: 17%;
+	}
+}
+
 .navbar{
 	padding: 1%;
 	text-align: right;

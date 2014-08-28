@@ -130,6 +130,7 @@ body{
 			vertical-align: middle;
 		}
 		&.loading {
+			font-size: 2em;
 			padding: 8% 20%;
 			text-align: center;
 			&:after{
@@ -404,6 +405,9 @@ body{
 
 .reference{
 	margin-bottom: 6%;
+	@media screen and (min-width: $break-tablet) {
+		margin: 0 15% 6% 15%;
+	}
 	.quote{
 		margin-bottom: 2%;
 	}
@@ -417,7 +421,7 @@ body{
 	}
 	.collegue{
 		text-align: right;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		@media screen and (max-width: $break-mobile) {
 			width: 60%;
 			margin-left: 40%;

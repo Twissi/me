@@ -53,7 +53,15 @@ var trianglePattern = (function () {
       var l, r, maxColumns, maxRows, drawArea;
 
       drawArea = document.getElementById(div);
+
       maxRows = 3;
+      if(typeof window.matchMedia !== "undefined"){
+        smartphone = window.matchMedia("screen and (max-device-width: 400px)").matches
+        if(smartphone){
+          maxRows = 2;
+        }
+      }
+      
 
       maxColumns = Math.ceil(drawArea.offsetWidth/90);
       if( maxColumns < 3 ){

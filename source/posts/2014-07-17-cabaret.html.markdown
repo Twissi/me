@@ -6,5 +6,5 @@ category: Side Projects
 image: cabaret.jpg
 ---
 
-This lightbox was created for the cabaret stage of the "Drunken and sobriety" camp at Nowhere. It has different animations which makes ist flash, glow and change colors. It was programmed with the arduino using an LED strip. The box is made out of wood and plexiglass.
+This lightbox was created for the cabaret stage of the "Drunken and sobriety" camp at Nowhere. It has different animations which makes ist flash, glow and change colors. It was programmed with the arduino using an LED strip. The box is made out of lasercutted wood and plexiglass.
 

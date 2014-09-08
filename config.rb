@@ -96,5 +96,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, "/me-online/"
+  set :http_prefix, "/me/"
 end

@@ -111,7 +111,7 @@
         <div class="quote">
           <span class="entypo-quote"></span>During our time together in Fraunhofer, I get to know Kristin as a very eager-to-research colleague who always wanted to find out. She was always trying out new designs and functions in here mobile apps and always came to us with her new ideas and suggestions. She is a great colleague: innovative, reliable and friendly at the same time.
         </div>
-        <div class="collegue">Neda Petreska (Fraunhofer ESK)</div>
+        <div class="collegue">Neda Petreska (Research Engineer Fraunhofer ESK)</div>
       </div>
     </div>
   </div>
@@ -195,34 +195,51 @@
       Get in <a data-scroll href="#nav-contact">contact</a>.
       <br/><br/>
       <div class="resource-bar">
-        <div class="timespan" style="width: 25%"><span class="text">Learning Swift</span></div>
-        <div class="timespan" style="width: 20%"><span class="text">Angular project</span></div>
-        <div class="timespan" style="width: 15%"><span class="text">Rails Girls Orga</span></div>
+        <div class="timespan" style="width: 20%"><span class="text">Designerprofile</span></div>
+        <div class="timespan" style="width: 15%"><span class="text">Rails Girls</span></div>
       </div>
       <br/>
     </div>
+    <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
+      <% if category == "Projects" %>
+          <div class="content">
+            <% articles[0...5].each do |article, i| %>
+              <div class="post">
+                <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
+                <div class="text">
+                  <div class="title"><%= article.title %></div>
+                  <%= article.body %>
+                  <span class="date">Posted on <%= article.date.strftime('%d %B') %> | </span><span class="tags"><%= article.tags.join(" + ") %></span>
+                </div>
+              </div>
+            <% end %>
+          </div>
+      <% end %>
+    <% end %>
   </div>
 
   <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
-    <div id="nav-sideprojects" class="content-category">
-      <div class="nav">
-        <a data-scroll href="#nav-contact" class="entypo-down-open"></a>
-        <a data-scroll href="#nav-resources" class="entypo-up-open"></a>
-      </div>
-      <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>
-      <div class="content">
-        <% articles[0...5].each do |article, i| %>
-          <div class="post">
-            <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
-            <div class="text">
-              <div class="title"><%= article.title %></div>
-              <%= article.body %>
-              <span class="date">Posted on <%= article.date.strftime('%d %B') %> | </span><span class="tags"><%= article.tags.join(" + ") %></span>
+    <% if category == "Side Projects" %>
+      <div id="nav-sideprojects" class="content-category">
+        <div class="nav">
+          <a data-scroll href="#nav-contact" class="entypo-down-open"></a>
+          <a data-scroll href="#nav-resources" class="entypo-up-open"></a>
+        </div>
+        <div class="name"><%= category.split(/,/)[0] %><span class="description"><%= category.split(/,/)[1] %></span></div>
+        <div class="content">
+          <% articles[0...5].each do |article, i| %>
+            <div class="post">
+              <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
+              <div class="text">
+                <div class="title"><%= article.title %></div>
+                <%= article.body %>
+                <span class="date">Posted on <%= article.date.strftime('%d %B') %> | </span><span class="tags"><%= article.tags.join(" + ") %></span>
+              </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 
   <div id="nav-contact" class="content-category">

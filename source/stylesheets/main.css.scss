@@ -195,6 +195,9 @@ img.html5{
 			border-width: 40px 40px 0 0;
 		}
 	}
+	&.notriangle:before{
+		display: none;
+	}
 	.name{
 		font-weight: 700;
 		text-align: center;

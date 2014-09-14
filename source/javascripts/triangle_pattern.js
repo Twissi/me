@@ -5,7 +5,8 @@ var trianglePattern = (function () {
   options = {
       resizeFactor: 10,
       triangleCount: 100,
-      colorArray: ["#fc2488", "#00bb9c", "#dc0043", "#ffba00", "#f68784", "#c1006a", "#d7d3bd"],
+      //colorArray: ["#fc2488", "#00bb9c", "#dc0043", "#ffba00", "#f68784", "#c1006a", "#d7d3bd"],
+      colorArray: ["#8AFF27", "#1AD7FF", "#2DE879", "#E8CF18", "#FFAA29"],
   };
 
   createDrawArea = function(div, width, height){
@@ -61,7 +62,7 @@ var trianglePattern = (function () {
           maxRows = 2;
         }
       }
-      
+
 
       maxColumns = Math.ceil(drawArea.offsetWidth/90);
       if( maxColumns < 3 ){

@@ -10,6 +10,10 @@ var quotes = (function () {
       "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.<br/>Thomas A. Edison",
       "Start where you are. Use what you have. Do what you can.<br/>Arthur Ashe",
       "Things do not happen. Things are made to happen.<br/>John F. Kennedy",
+      "My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had — everyday I’m learning something new.<br/>Richard Branson",
+      "If you cannot do great things, do small things in a great way.<br/>Napoleon Hill",
+      "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</br>Albert Schweitzer",
+      "Choose a job that you like, and you will never have to work a day in your life.<br/>Confucius"
     ]
 
     return {

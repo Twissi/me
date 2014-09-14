@@ -3,4 +3,4 @@ me-online
 
 Online portfolio
 
-[ ![Codeship Status for Twissi/me-online](https://codeship.io/projects/ae660320-055d-0132-c600-0e3e5d6e47ce/status)](https://codeship.io/projects/30878)
+[ ![Codeship Status for Twissi/me](https://codeship.io/projects/10908950-19a8-0132-515f-0a39251edeca/status)](https://codeship.io/projects/34447)

@@ -455,6 +455,12 @@ img.html5{
 	}
 }
 
+img.ribbon{
+	@media screen and (max-width: $break-mobile) {
+		width: 120px;
+	}
+}
+
 .socialmedia{
 	width: 100%;
 	margin-top: 40px;

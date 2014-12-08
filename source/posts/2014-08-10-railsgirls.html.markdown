@@ -2,7 +2,7 @@
 title: Rails Girls Vienna Event
 date: 2014-08-10 21:11 UTC
 tags: event, women
-category: Projects
+category: Side Projects
 image: railsgirls.png
 ---
 

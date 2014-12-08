@@ -10,6 +10,14 @@
 	box-sizing: border-box;
 }
 
+.linethrough {
+	text-decoration: line-through;
+}
+
+a.non-underline {
+	text-decoration: none;
+}
+
 /* entypo icons */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;

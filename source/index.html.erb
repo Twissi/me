@@ -4,8 +4,7 @@
     I'm Kristin. I'm a <span class="highlight">web developer</span>,<br/><span class="highlight">mobile enthusiast</span> and I love to create <span class="highlight">awesomeness</span>.
   </div>
   <div class="subline">
-    I got unused power for new projects left.<br/>
-    <span class="entypo-megaphone"></span><a data-scroll data-options='{"speed": 900}' href="#nav-resources">Find out more.</a>
+    <span class="entypo-megaphone"></span><a data-scroll data-options='{"speed": 900}' href="#nav-sideprojects" class="non-underline">Find out more about my current side projects.</a>
   </div>
 </div>
 <div class="page-content">
@@ -152,7 +151,7 @@
     </div>
     <div class="name">Tools</div>
     <div class="content">
-      In the <b>last 3 years</b> I worked on over 10 mobile projects using these technologies.
+      In the <b>last 3 years</b> I worked on over 10 web projects using these technologies.
       <br/><br/>
       <div class="skill-bar">
         <div class="bar"><div class="progress full" style="width: 100%"></div></div>
@@ -160,7 +159,11 @@
       </div>
       <div class="skill-bar">
         <div class="bar"><div class="progress" style="width: 85%"></div></div>
-        <div class="description">JavaScript</div>
+        <div class="description">JavaScript (Node.js)</div>
+      </div>
+      <div class="skill-bar">
+        <div class="bar"><div class="progress" style="width: 40%"></div></div>
+        <div class="description">JS frameworks (Backbone)</div>
       </div>
       <div class="skill-bar">
         <div class="bar"><div class="progress" style="width: 80%"></div></div>
@@ -175,53 +178,11 @@
         <div class="description">Ruby / Ruby on Rails</div>
       </div>
       <div class="skill-bar">
-        <div class="bar"><div class="progress" style="width: 40%"></div></div>
-        <div class="description">JavaScript MVC frameworks</div>
-      </div>
-      <div class="skill-bar">
         <div class="bar"><div class="progress full" style="width: 100%"></div></div>
         <div class="description">Git</div>
       </div>
       <br/>
       <%= image_tag("HTML5.png", class: "center html5") %>
-    </div>
-  </div>
-
-  <div id="nav-resources" class="content-category">
-    <div class="nav">
-      <a data-scroll href="#nav-sideprojects" class="entypo-down-open"></a>
-      <a data-scroll href="#nav-tools" class="entypo-up-open"></a>
-    </div>
-    <div class="name">Time Resources</div>
-    <div class="content">
-       <div class="resource-bar">
-        <div class="timespan" style="width: 20%"><span class="text">Designerprofile</span></div>
-        <div class="timespan" style="width: 15%"><span class="text">Rails Girls</span></div>
-      </div>
-      <br/><br/>
-      As you can see, I currently only use 35% of my time for projects.
-      That's good for you, because that means I got free resources to work with you on your project.<br/><br/>
-      Let's get in <a data-scroll href="#nav-contact">touch</a> and talk about your project!
-      <br/><br/>
-      <br/>
-      <div class="title"><span class="entypo-search"></span> Projects</div>
-      <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
-        <% if category == "Projects" %>
-            <div class="content">
-              <% articles[0...5].each do |article, i| %>
-                <div class="post">
-                  <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
-                  <div class="text">
-                    <div class="title"><%= article.title %></div>
-                    <%= article.body %>
-                    <span class="date">Posted on <%= article.date.strftime('%d %B') %> | </span><span class="tags"><%= article.tags.join(" + ") %></span>
-                  </div>
-                </div>
-              <% end %>
-            </div>
-        <% end %>
-      <% end %>
-
     </div>
   </div>
 

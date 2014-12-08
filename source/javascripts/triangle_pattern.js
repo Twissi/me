@@ -6,7 +6,8 @@ var trianglePattern = (function () {
       resizeFactor: 10,
       triangleCount: 100,
       //colorArray: ["#fc2488", "#00bb9c", "#dc0043", "#ffba00", "#f68784", "#c1006a", "#d7d3bd"],
-      colorArray: ["#8AFF27", "#1AD7FF", "#2DE879", "#E8CF18", "#FFAA29"],
+      //colorArray: ["#8AFF27", "#1AD7FF", "#2DE879", "#E8CF18", "#FFAA29"],
+      colorArray: ["#69BCFF", "#7ED5FF", "#83A1E8", "#D7EFFF"],
   };
 
   createDrawArea = function(div, width, height){

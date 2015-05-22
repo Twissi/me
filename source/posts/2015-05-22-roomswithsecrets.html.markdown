@@ -7,6 +7,5 @@ image: girls-night.jpg
 ---
 
 I am supporting friends of mine with their room escape challenge project by developing their company website.
-Rooms with Secrets is going live soon.
 
-<span class="entypo-address"></span>[http://www.roomswithsecrets.de/](http://www.roomswithsecrets.de/)
+<span class="entypo-address"></span>[http://rooms-with-secrets.de](http://rooms-with-secrets.de)

@@ -7,7 +7,7 @@ Online portfolio
 
 This portfolio was created with Middleman, shipped with Codeship and hosted at Github Pages.
 
-Published under [http://kristin-albert.de](http://kristin-albert.de)
+Published under [http://kristin-fritsch.de](http://kristin-fritsch.de)
 
 Installation
 ============

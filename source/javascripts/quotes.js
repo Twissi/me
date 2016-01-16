@@ -13,7 +13,8 @@ var quotes = (function () {
       "My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had — everyday I’m learning something new.<br/>Richard Branson",
       "If you cannot do great things, do small things in a great way.<br/>Napoleon Hill",
       "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</br>Albert Schweitzer",
-      "Choose a job that you like, and you will never have to work a day in your life.<br/>Confucius"
+      "Choose a job that you like, and you will never have to work a day in your life.<br/>Confucius",
+      "They alwayss say time changes things, but you actually have to change them yourself<br/>Andy Warhol",
     ]
 
     return {

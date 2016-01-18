@@ -15,3 +15,5 @@ Installation
 bundle install
 
 bundle exec middleman
+
+pipeline test

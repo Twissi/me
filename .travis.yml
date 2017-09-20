@@ -1,0 +1,14 @@
+language: ruby
+install:
+- bundle install --path vendor/bundle
+script:
+- git config --global user.email "ich@kristin-albert.de"
+- git config --global user.name "Travis Deployment"
+- git remote set-url origin https://twissi:${GH_TOKEN}@github.com/twissi/me.git
+- bundle exec rake publish ALLOW_DIRTY=true --trace
+branches:
+  only:
+  - master
+env:
+  global:
+    secure: ZzmXnTyL76xuEkfC/mJxbiOiPkhlCo1rvmveLb2nI/1FGjMUhpVElTy9GRj3KTi6TFg0YIg2fPnE6F0uyxJflJsfGEnX63rBFKIIUWnqI5S4lfqqJv7VOdZX5KiL5MmB2kdxIotu/DqeqDTuBmCTOV2xcZqXRUqN9KuwJU/Kh5Q=

@@ -2,7 +2,7 @@
 title: Cyborg costume
 date: 2014-07-17 21:11 UTC
 tags: art, festival, costume, robot
-category: Side Projects
+category: Old
 image: robot.jpg
 ---
 

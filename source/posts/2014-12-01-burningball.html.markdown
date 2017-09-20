@@ -2,7 +2,7 @@
 title: Vienna Burning Ball
 date: 2014-12-01 19:11 UTC
 tags: event, burning man
-category: Side Projects
+category: Old
 image: burningball.jpg
 ---
 

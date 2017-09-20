@@ -2,7 +2,7 @@
 title: Boston Decompression
 date: 2015-10-07 08:00 UTC
 tags: event, burning man
-category: Side Projects
+category: Old
 image: decompression.jpg
 ---
 

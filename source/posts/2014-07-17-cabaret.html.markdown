@@ -2,7 +2,7 @@
 title: Cabaret sign
 date: 2014-07-17 21:11 UTC
 tags: art, festival
-category: Side Projects
+category: Old
 image: cabaret.jpg
 ---
 

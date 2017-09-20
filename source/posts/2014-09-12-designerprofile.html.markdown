@@ -2,7 +2,7 @@
 title: Webdesign Designerprofile
 date: 2014-09-12 10:42 UTC
 tags: webdesign, html, css
-category: Projects
+category: Old
 image: designerprofile.png
 ---
 

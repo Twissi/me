@@ -2,7 +2,7 @@
 title: Upcycled jellyfish
 date: 2013-05-01 20:18 UTC
 tags: art, destival
-category: Side Projects
+category: Old
 image: tanzdurchdentag.jpg
 ---
 

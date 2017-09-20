@@ -1,7 +1,7 @@
 ---
 title: Boston Challenge App
 date: 2014-05-25 19:52 UTC
-category: Side Projects
+category: Old
 image: bostonchallenge.jpg
 tags: rails, app
 ---

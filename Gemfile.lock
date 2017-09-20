@@ -138,5 +138,8 @@ DEPENDENCIES
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)
 
+RUBY VERSION
+   ruby 2.2.2p95
+
 BUNDLED WITH
-   1.11.2
+   1.15.1

@@ -1,0 +1,17 @@
+<div id="nav-sideprojects" class="content-category">
+  <a href="/index.html">back home</a>
+  <div class="name">All Projects</div>
+  <% page_articles.each do |article|%>
+    <div class="content">
+      <div class="post">
+        <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
+        <div class="text">
+          <div class="title"><%= article.title %></div>
+          <%= article.body %>
+          <span class="date">Posted on <%= article.date.strftime('%d %B %Y') %> | </span><span class="tags"><%= article.tags.join(" + ") %></span>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <a href="/index.html">back home</a>
+</div>

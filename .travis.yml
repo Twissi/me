@@ -5,6 +5,7 @@ script:
 - git config --global user.email "ich@kristin-albert.de"
 - git config --global user.name "Travis Deployment"
 - git remote set-url origin https://twissi:${GH_TOKEN}@github.com/twissi/me.git
+- yarn install
 - bundle exec rake publish ALLOW_DIRTY=true --trace
 branches:
   only:

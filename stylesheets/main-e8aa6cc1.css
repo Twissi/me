@@ -85,12 +85,6 @@ body {
     text-align: center;
     display: block; }
 
-img.html5 {
-  width: 10%; }
-  @media screen and (max-width: 400px) {
-    img.html5 {
-      width: 17%; } }
-
 .navbar {
   padding: 1%;
   text-align: right;

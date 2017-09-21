@@ -1,0 +1,33 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "Online portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twissi/me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Twissi/me/issues"
+  },
+  "homepage": "https://github.com/Twissi/me#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "smooth-scroll": "^12.1.5",
+    "style-loader": "^0.18.2",
+    "svg.js": "^2.6.3",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {}
+}

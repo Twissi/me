@@ -189,7 +189,7 @@
     </div>
   </div>
 
-  <% page_articles.group_by {|article| article.metadata[:page]['category']}.each do |category, articles|%>
+  <% blog.articles.group_by {|article| article.metadata[:page][:category]}.each do |category, articles|%>
     <% if category == "Side Projects" %>
       <div id="nav-sideprojects" class="content-category">
         <div class="nav">
@@ -200,7 +200,7 @@
         <div class="content">
           <% articles[0...5].each do |article, i| %>
             <div class="post">
-              <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
+              <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page][:image] %>')"></div>
               <div class="text">
                 <div class="title"><%= article.title %></div>
                 <%= article.body %>

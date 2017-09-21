@@ -1,6 +1,9 @@
-var trianglePattern = (function () {
+import SVG from 'svg.js';
 
-  var createDrawArea, createTriangle, createSquare, options, draw, triangles = [];
+var trianglePattern = function () {
+
+  var createDrawArea, createTriangle, createSquare, options, draw, mouseoverEvent;
+  var triangles = [];
 
   options = {
       resizeFactor: 10,
@@ -14,7 +17,7 @@ var trianglePattern = (function () {
 
   createDrawArea = function(div, width, height){
     draw = SVG(div).size(width, height);
-  }
+  };
 
   createTriangle = function(coords){
     var color, random, polygon;
@@ -50,11 +53,11 @@ var trianglePattern = (function () {
     //   this.fill({ color: this.attr('fill'), opacity: 1 });
     // }
     this.fill({ color: this.attr('fill'), opacity: 0 });
-  }
+  };
 
   return {
     generate: function(div){
-      var l, r, maxColumns, maxRows, drawArea;
+      var l, r, maxColumns, maxRows, drawArea, smartphone;
 
       drawArea = document.getElementById(div);
 
@@ -107,6 +110,7 @@ var trianglePattern = (function () {
       }
     }
   };
-})();
+}();
 
+export default trianglePattern;
 

@@ -1,8 +1,22 @@
+# Activate and configure extensions
+# https://middlemanapp.com/advanced/configuration/#configuring-extensions
+
+# Layouts
+# https://middlemanapp.com/basics/layouts/
+
+# Per-page layout changes
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
+# With alternative layout
+# page '/path/to/file.html', layout: 'other_layout'
+
+# Time.zone = "UTC"
+
 ###
 # Blog settings
 ###
-
-# Time.zone = "UTC"
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -29,72 +43,43 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
-# page "/feed.xml", layout: false
+# Proxy pages
+# https://middlemanapp.com/advanced/dynamic-pages/
 
-###
-# Compass
-###
+# proxy(
+#   '/this-page-has-no-template.html',
+#   '/template-file.html',
+#   locals: {
+#     which_fake_page: 'Rendering a fake page with a local variable'
+#   },
+# )
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-###
 # Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-activate :livereload
-
 # Methods defined in the helpers block are available in templates
+# https://middlemanapp.com/basics/helper-methods/
+
 # helpers do
+#   def some_helper
+#     'Helping'
+#   end
 # end
-
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
 
 # Build-specific configuration
+# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+
+# activate :imageoptim
+
+#
+# Use webpack for assets
+#
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ?  "yarn run build" : "yarn run start",
+  source: ".tmp/dist",
+  latency: 1
+
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
+  # activate :minify_css
+  # activate :minify_javascript
   activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  #set :http_prefix, "/me/"
 end

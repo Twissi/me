@@ -1,3 +1,9 @@
+import 'main.css.scss';
+
+import Smoothscroll from 'smooth-scroll';
+import quotes from './quotes';
+import pattern from './triangle_pattern';
+
 function transitionEndEventName () {
     var i,
         undefined,
@@ -16,8 +22,13 @@ function transitionEndEventName () {
     }
 }
 
+var scroll = new Smoothscroll('a[href*="#"]', {
+	speed: 900, // Integer. How fast to complete the scroll in milliseconds
+	easing: 'easeInOutQuart', // Easing pattern to use
+});
+
 window.onload = function(){
-	trianglePattern.generate("triangleBackground");
+	pattern.generate("triangleBackground");
 	// add animation class for zooming
 	document.getElementById('secretMessage').className = "";
 	// add quote
@@ -26,7 +37,7 @@ window.onload = function(){
 
 	// after transition add random text
 	setTimeout(function(){document.getElementById('secretMessage').children[0].innerHTML = quotes.randomQuote()}, 2000);
-	
+
 	//transition callback is not working
 	var transitionEnd = transitionEndEventName();
 	document.getElementById('triangleBackground').addEventListener(transitionEnd, function( event ) {
@@ -34,9 +45,9 @@ window.onload = function(){
      }, false);
 
 	// start random animation
-	setTimeout(trianglePattern.randomShow, 2000);
+    setTimeout(pattern.randomShow, 2000);
 };
 
 window.onresize = function() {
-	trianglePattern.update("triangleBackground");
+	pattern.update("triangleBackground");
 };

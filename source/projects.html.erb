@@ -4,7 +4,7 @@
   <% page_articles.each do |article|%>
     <div class="content">
       <div class="post">
-        <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page]['image'] %>')"></div>
+        <div class="image" style="background-image: url('<%= asset_url 'images/' + article.metadata[:page][:image] %>')"></div>
         <div class="text">
           <div class="title"><%= article.title %></div>
           <%= article.body %>

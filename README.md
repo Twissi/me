@@ -7,13 +7,20 @@ This portfolio was created with Middleman, shipped with Codeship and hosted at G
 
 Published under [http://kristin-fritsch.de](http://kristin-fritsch.de)
 
-Installation
-============
+Serve page locally
+==================
 
 ```sh
 $ bundle install
 $ yarn install
 $ bundle exec middleman
+```
+
+Build static page
+=================
+
+```sh
+$ bundle exec middleman build
 ```
 
 

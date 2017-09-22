@@ -64,19 +64,23 @@ end
 #   end
 # end
 
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
-
-# activate :imageoptim
-
 #
-# Use webpack for assets
+# Use webpack for asset pipeline
 #
 activate :external_pipeline,
   name: :webpack,
   command: build? ?  "yarn run build" : "yarn run start",
   source: ".tmp/dist/assets",
   latency: 1
+
+#
+# Ignore asset files that are handled by webpack
+#
+ignore /stylesheets\/(?!main.bundle).*\.css/
+ignore /javascripts\/(?!main.bundle).*\.js/
+
+# Build-specific configuration
+# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
   # activate :minify_css

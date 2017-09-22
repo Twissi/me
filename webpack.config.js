@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var Clean = require('clean-webpack-plugin');
 
 module.exports = {
@@ -17,7 +18,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/.tmp/dist',
-    filename: '[name].bundle.js',
+    filename: 'assets/javascripts/[name].bundle.js',
   },
 
   module: {
@@ -29,13 +30,23 @@ module.exports = {
       },
       {
         test: /\.scss$|.sass$/,
-        use: [{
-          loader: "style-loader" // creates style nodes from JS strings
-        }, {
-          loader: "css-loader" // translates CSS into CommonJS
-        }, {
-          loader: "sass-loader" // compiles Sass to CSS
-        }]
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: function () {
+                  return [
+                    require('autoprefixer')
+                  ];
+                }
+              }
+            },
+            'sass-loader'
+          ]
+        }),
       }
     ]
   },
@@ -49,6 +60,7 @@ module.exports = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
+    new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
     new Clean(['.tmp']),
   ],
 };

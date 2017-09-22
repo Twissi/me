@@ -75,7 +75,7 @@ end
 activate :external_pipeline,
   name: :webpack,
   command: build? ?  "yarn run build" : "yarn run start",
-  source: ".tmp/dist",
+  source: ".tmp/dist/assets",
   latency: 1
 
 configure :build do

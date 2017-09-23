@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var Clean = require('clean-webpack-plugin');
 
 module.exports = {
@@ -29,21 +30,23 @@ module.exports = {
       },
       {
         test: /\.scss$|.sass$/,
-        loader: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer')
-                ];
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: function () {
+                  return [
+                    require('autoprefixer')
+                  ];
+                }
               }
-            }
-          },
-          'sass-loader'
-        ]
+            },
+            'sass-loader'
+          ]
+        }),
       },
       {
         test: /(\.woff|\.woff2)$/,
@@ -61,6 +64,7 @@ module.exports = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
+    new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
     new Clean(['.tmp']),
   ],
 };

@@ -3,6 +3,13 @@ import 'main.css.scss';
 import Smoothscroll from 'smooth-scroll';
 import quotes from './quotes';
 import pattern from './triangle_pattern';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+      families: ['Open Sans:300,400,700']
+    }
+});
 
 function transitionEndEventName () {
     var i,

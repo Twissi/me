@@ -39,7 +39,7 @@ a.non-underline {
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, 'Helvetica Neue', sans-serif;
 	font-size: 15px;
 	@media screen and (max-width: $break-tablet) {
 		font-size: 13px;
@@ -492,6 +492,10 @@ img.ribbon{
 	}
 }
 
-
+.wf-active {
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+}
 
 

@@ -31,6 +31,7 @@
     "smooth-scroll": "^12.1.5",
     "style-loader": "^0.18.2",
     "svg.js": "^2.6.3",
+    "webfontloader": "^1.6.28",
     "webpack": "^3.6.0"
   },
   "dependencies": {}

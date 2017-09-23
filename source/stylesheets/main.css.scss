@@ -14,8 +14,14 @@
 	text-decoration: line-through;
 }
 
+a {
+	text-decoration: none;
+	border-bottom: 1px solid $normal-text;
+}
+
 a.non-underline {
 	text-decoration: none;
+	border: none;
 }
 
 /* entypo icons */

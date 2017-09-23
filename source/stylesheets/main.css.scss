@@ -462,12 +462,14 @@ body{
 
 .contact{
 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: 50%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 350px 350px;
 	background-repeat: no-repeat;
 	background-position: top right;
 	min-height: 400px;
+	background-image: url('/images/kristinfritsch.jpg');
+
 	@media screen and (max-width: $break-mobile) {
 		min-height: 200px;
 	}

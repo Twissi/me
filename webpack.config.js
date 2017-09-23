@@ -47,6 +47,10 @@ module.exports = {
             'sass-loader'
           ]
         }),
+      },
+      {
+        test: /(\.woff|\.woff2)$/,
+        loader: 'file-loader'
       }
     ]
   },

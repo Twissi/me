@@ -1,7 +1,7 @@
 Online portfolio
 ================
 
-https://travis-ci.org/Twissi/me.svg?branch=master
+[![Build Status](https://travis-ci.org/Twissi/me.svg?branch=master)](https://travis-ci.org/Twissi/me)
 
 This portfolio was created with Middleman, shipped with Codeship and hosted at Github Pages.
 

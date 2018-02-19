@@ -6,6 +6,6 @@ category: Side Projects
 image: thanksgiving.jpg
 ---
 
-Using photoshop I created a funny image for Thanksgiving to send out to friends and family. Still makes me laugh.
+I made this funny image for Thanksgiving to send out to friends and family. Still makes me laugh.
 
 

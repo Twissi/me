@@ -95,6 +95,7 @@ body{
 		text-decoration: none;
 		font-size: 2.5em;
 		padding: 0 2%;
+		border-bottom: 0;
 	}
 }
 
@@ -476,11 +477,20 @@ body{
 	min-height: 400px;
 	background-image: url('/images/kristinfritsch.jpg');
 
+	@media screen and (max-width: 850px) {
+		background-size: 40%;
+	}
 	@media screen and (max-width: $break-mobile) {
 		min-height: 200px;
+		background-size: 200px 200px;
+		background-position: top center;
+		padding-top: 200px;
 	}
 	.text{
 		width: 50%;
+		@media screen and (max-width: $break-mobile) {
+			width: 100%;
+		}
 	}
 }
 

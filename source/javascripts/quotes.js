@@ -15,6 +15,8 @@ var quotes = (function () {
     "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</br>Albert Schweitzer",
     "Choose a job that you like, and you will never have to work a day in your life.<br/>Confucius",
     "They alwayss say time changes things, but you actually have to change them yourself<br/>Andy Warhol",
+    "The Way Get Started Is To Quit Talking And Begin Doing.<br/>Walt Disney",
+    "Don't let yesterday take up too much of today.<br/>Will Rogers"
   ]
 
   return {

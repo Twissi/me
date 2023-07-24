@@ -1,8 +1,6 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby "2.7.1"
+ruby "3.2.2"
 
 gem "middleman"
 gem "middleman-blog"

@@ -17,10 +17,21 @@ jobs:
         with:
           ruby-version: 3.2
 
+      - name: Set ip Node.js (.nvmrc)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Set up yarn
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
       - name: Install and Build 🔧
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
+          yarn install
           bundle exec middleman build
 
       - name: Deploy 🚀

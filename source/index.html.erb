@@ -1,13 +1,23 @@
+<div class="header">
+  <%= image_tag 'logo.png', :class => 'logo'%>
+  <div id="triangleBackground"></div>
+  <div id="secretMessage" class="loading">
+    <div class="text"></div>
+  </div>
+</div>
+
 <div class="welcome">
   <div class="headline">
     <span class="highlight">Hi</span>,
-    I'm Krissi.<br/> I love my work as a <span class="highlight">frontend engineer</span>.<br/>It is not just a coding job, it's rather creating<br/><span class="highlight">beautiful experiences</span> in the internet. <br/>
+    I'm Krissi.<br/>
+    This page is currently under construction.
   </div>
-  <div class="subline">
+  <div class="subline"><span class="entypo-megaphone"></span>Check out my social media accounts in the meantime.</div>
+  <div class="subline" style="display:none;">
     <span class="entypo-megaphone"></span><a data-scroll data-options='{"speed": 900}' href="#nav-sideprojects" class="non-underline">Find out more about my current side projects.</a>
   </div>
 </div>
-<div class="page-content">
+<div class="page-content" style="display:none;">
   <div id="nav-whoiam" class="content-category">
     <div class="nav">
       <a data-scroll href="#nav-whatmatters" class="entypo-down-open"></a>
@@ -48,7 +58,7 @@
     </div>
   </div>
 </div>
-<div id="nav-whatmatters" class="content-category">
+<div id="nav-whatmatters" class="content-category" style="display:none;">
   <div class="nav">
     <a data-scroll href="#nav-resume" class="entypo-down-open"></a>
     <a data-scroll href="#nav-whoiam" class="entypo-up-open"></a>
@@ -90,7 +100,7 @@
   </div>
 </div>
 
-  <div id="nav-resume" class="content-category">
+  <div id="nav-resume" class="content-category" style="display:none;">
     <div class="nav">
       <a data-scroll href="#nav-tools" class="entypo-down-open"></a>
       <a data-scroll href="#nav-whatmatters" class="entypo-up-open"></a>
@@ -121,7 +131,7 @@
     </div>
   </div>
 
-  <div id="nav-tools" class="content-category">
+  <div id="nav-tools" class="content-category" style="display:none;">
     <div class="nav">
       <a data-scroll href="#nav-sideprojects" class="entypo-down-open"></a>
       <a data-scroll href="#nav-resume" class="entypo-up-open"></a>
@@ -189,6 +199,7 @@
     </div>
   </div>
 
+<div style="display:none;">
   <% blog.articles.group_by {|article| article.metadata[:page][:category]}.each do |category, articles|%>
     <% if category == "Side Projects" %>
       <div id="nav-sideprojects" class="content-category">
@@ -213,28 +224,17 @@
       </div>
     <% end %>
   <% end %>
+  </div>
 
   <div id="nav-contact" class="content-category notriangle">
     <div class="nav">
       <a data-scroll href="#nav-sideprojects" class="entypo-up-open"></a>
     </div>
-    <div class="name">Contact</div>
     <div class="content">
-      <div class="contact">
-        <span class="title">SAY HI!</span><br/><br/>
-        <div class="text">
-          Me and <a href="https://abwesend.com" target="_blank">Ben</a> just returned from our trip around the world.
-          <br/><br/>We are based in Leipzig. If you would like to work with me, shoot me an email!
-          <br/><br/>
-        </div>
-        <span class="entypo-mail"></span><a href="mailto:dev@kristin-fritsch.de?subject=Say hello">dev@kristin-fritsch.de</a>
-      </div>
       <div class="socialmedia">
-        <a href="https://twitter.com/twissi" class="entypo-twitter-circled non-underline" target="_blank"></a>
         <a href="https://github.com/Twissi" class="entypo-github-circled non-underline" target="_blank"></a>
         <a href="http://instagram.com/twissi" class="entypo-instagrem non-underline" target="_blank"></a>
-        <a href="https://www.facebook.com/kristinfritschgermany" class="entypo-facebook-circled non-underline" target="_blank"></a>
-        <a href="http://at.linkedin.com/in/kristinfritsch/en" class="entypo-linkedin-circled non-underline" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/kristinfritsch" class="entypo-linkedin-circled non-underline" target="_blank"></a>
       </div>
     </div>
   </div>
@@ -243,3 +243,5 @@
   This page was build with <a href="http://middlemanapp.com/" target="_blank">Middleman</a> and shipped with <a href="https://travis-ci.org" target="_blank">Travis CI</a>.
 </div>
 <br/>
+
+ <%= javascript_include_tag "main.bundle", :defer => "defer" %>

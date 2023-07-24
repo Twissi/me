@@ -11,16 +11,8 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="header">
-      <%= image_tag 'logo.png', :class => 'logo'%>
-      <div id="triangleBackground"></div>
-      <div id="secretMessage" class="loading">
-        <div class="text"></div>
-      </div>
-    </div>
 
     <%= yield %>
 
-    <%= javascript_include_tag "main.bundle", :defer => "defer" %>
   </body>
 </html>

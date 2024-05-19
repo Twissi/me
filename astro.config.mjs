@@ -8,6 +8,5 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx()],
-  site: "http://kristin-fritsch.de",
-  base: "me",
+  site: "https://twissi.github.io",
 });

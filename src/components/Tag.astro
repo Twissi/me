@@ -1,0 +1,18 @@
+---
+export interface Props {
+  classList?: string;
+  id?: string;
+}
+
+const { classList, id } = Astro.props;
+---
+
+<span
+  id={id}
+  class:list={[
+    "p-2 text-[12px] uppercase tracking-wide font-semibold rounded-md",
+    classList,
+  ]}
+>
+  <slot />
+</span>

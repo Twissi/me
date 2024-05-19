@@ -1,0 +1,243 @@
+---
+import { Image } from "astro:assets";
+
+import Tag from "../components/Tag.astro";
+import me from "../images/me.png";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-6 bg-[url('/images/Weather-Meteor--Streamline-Pixel.svg')]"
+    >
+      <div class="col-span-2 xl:col-span-1 p-8">
+        <div class="bg-[color:var(--light-purple)] rounded-xl">
+          <h1
+            class="text-2xl font-semibold bg-gradient-to-r from-[color:var(--purple)] max-w-xs pl-2"
+          >
+            Hallo <img
+              src="/images/Interface-Essential-Global-Public--Streamline-Pixel.svg"
+              class="w-5 h-5 inline align-baseline"
+            />!
+          </h1>
+          <p class="text-sm pt-4"></p>
+          <p class="text-sm pb-4">
+            Ich möchte Menschen für Technik begeistern und ihnen helfen ihre
+            Ideen umsetzen. Deshalb leite Workshops oder unterstütze als
+            Mentorin bei diversen Angeboten in Leipzig und Umgebung.
+          </p>
+        </div>
+
+        <div class="flex flex-row mt-6">
+          <div
+            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300"
+          >
+            <a href="#" id="workshopsButton"
+              ><Tag classList="bg-[var(--purple)]">Workshops</Tag></a
+            >
+          </div>
+          <div
+            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
+          >
+            <a href="#" id="hackathonsButton"
+              ><Tag classList="bg-[var(--yellow)]">Hackathons</Tag></a
+            >
+          </div>
+          <div
+            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
+          >
+            <a href="#" id="sonstigesButton"
+              ><Tag classList="bg-[var(--blue)]">Sonstiges</Tag></a
+            >
+          </div>
+        </div>
+
+        <Image
+          src={me}
+          alt="Image of Krissi with AR headset"
+          class="hidden sm:block mt-4 max-w-sm"
+        />
+      </div>
+
+      <div class="col-span-4 xl:col-span-5 min-[2000px]:col-span-4 p-8 pb-20">
+        <slot />
+      </div>
+    </div>
+
+    <footer id="kontakt" class="bg-[var(--purple)] p-12 text-sm">
+      <div class="flex grid-4 justify-between w-80 mx-auto">
+        <div>
+          <div
+            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+          >
+            Code
+          </div>
+          <a
+            href="http://github.com/twissi"
+            target="_blank"
+            class="underline underline-offset-2 decoration-solid hover:decoration-2 hover:decoration-dotted"
+            >Github</a
+          ><br />
+        </div>
+        <div>
+          <div
+            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+          >
+            Social
+          </div>
+          <a
+            href="https://instagram.com/twissi"
+            target="_blank"
+            class="underline underline-offset-2 decoration-solid hover:decoration-2 hover:decoration-dotted"
+            >Instagram</a
+          ><br />
+          <a
+            href="https://www.linkedin.com/in/kristinfritsch"
+            target="_blank"
+            class="underline underline-offset-2 decoration-solid hover:decoration-2 hover:decoration-dotted"
+            >LinkedIn</a
+          ><br />
+        </div>
+        <div>
+          <div
+            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+          >
+            Rechtliches
+          </div>
+          <a
+            href="/impressum"
+            class="underline underline-offset-2 decoration-solid hover:decoration-2 hover:decoration-dotted"
+            >Impressum</a
+          >
+          <br />
+          <a
+            href="/credits"
+            class="underline underline-offset-2 decoration-solid hover:decoration-2 hover:decoration-dotted"
+            >Credits</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --purple: #8576ff;
+    --light-purple: #b2a4ff;
+    --workshops: #8576ff;
+    --yellow: #ffdeb4;
+    --hackathons: #ffdeb4;
+    --blue: #7bc9ff;
+    --other: #7bc9ff;
+    --light-green: #adff2f;
+    --text-color: #555d6b;
+  }
+  html {
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--light-purple);
+  }
+</style>
+
+<script>
+  const workshopsButton = document.getElementById("workshopsButton");
+  const hackathonsButton = document.getElementById("hackathonsButton");
+  const otherButton = document.getElementById("sonstigesButton");
+  const workshopsCards = Array.from(
+    document.getElementsByClassName("workshops")
+  );
+  const hackathonsCards = Array.from(
+    document.getElementsByClassName("hackathons")
+  );
+  const otherCards = Array.from(document.getElementsByClassName("other"));
+
+  let workshopsEnabled = true;
+  let hackathonsEnabled = true;
+  let otherEnabled = true;
+
+  const update = () => {
+    workshopsCards.forEach((element) => {
+      element.classList.add("hidden");
+    });
+    hackathonsCards.forEach((element) => {
+      element.classList.add("hidden");
+    });
+    otherCards.forEach((element) => {
+      element.classList.add("hidden");
+    });
+
+    if (workshopsEnabled) {
+      workshopsCards.forEach((element) => {
+        element.classList.remove("hidden");
+      });
+    }
+    if (hackathonsEnabled) {
+      hackathonsCards.forEach((element) => {
+        element.classList.remove("hidden");
+      });
+    }
+    if (otherEnabled) {
+      otherCards.forEach((element) => {
+        element.classList.remove("hidden");
+      });
+    }
+  };
+
+  const reset = () => {
+    workshopsEnabled = true;
+    hackathonsEnabled = true;
+    otherEnabled = true;
+  };
+
+  workshopsButton?.addEventListener("click", (event) => {
+    event.preventDefault;
+    if (workshopsEnabled && !otherEnabled && !hackathonsEnabled) {
+      reset();
+    } else {
+      workshopsEnabled = true;
+      otherEnabled = false;
+      hackathonsEnabled = false;
+    }
+    update();
+  });
+  hackathonsButton?.addEventListener("click", (event) => {
+    event.preventDefault;
+    if (hackathonsEnabled && !workshopsEnabled && !otherEnabled) {
+      reset();
+    } else {
+      hackathonsEnabled = true;
+      otherEnabled = false;
+      workshopsEnabled = false;
+    }
+    update();
+  });
+  otherButton?.addEventListener("click", (event) => {
+    event.preventDefault;
+    if (otherEnabled && !hackathonsEnabled && !workshopsEnabled) {
+      reset();
+    } else {
+      otherEnabled = true;
+      workshopsEnabled = false;
+      hackathonsEnabled = false;
+    }
+    update();
+  });
+</script>

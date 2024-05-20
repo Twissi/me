@@ -85,10 +85,14 @@ const target = entry.data.target;
 </div>
 
 <style is:global define:vars={{ tagColor }}>
+  h2 {
+    word-break: break-all;
+  }
   article a {
     color: var(--purple);
     text-decoration: underline var(--purple);
     text-underline-offset: 3px;
+    word-break: break-all;
   }
   article a:hover {
     text-decoration: underline dotted var(--purple) 3px;

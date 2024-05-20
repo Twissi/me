@@ -23,10 +23,10 @@ const { title } = Astro.props;
   </head>
   <body>
     <div
-      class="grid grid-cols-1 sm:grid-cols-6 bg-[url('/me/images/Weather-Meteor--Streamline-Pixel.svg')]"
+      class="grid grid-cols-1 md:grid-cols-6 bg-[url('/me/images/Weather-Meteor--Streamline-Pixel.svg')]"
     >
-      <div class="col-span-2 xl:col-span-1 p-8">
-        <div class="bg-[color:var(--light-purple)] rounded-xl">
+      <div class="col-span-2 xl:col-span-1 p-4 sm:p-8 sm:pr-0">
+        <div class="bg-[color:var(--light-purple)]">
           <h1
             class="text-2xl font-semibold bg-gradient-to-r from-[color:var(--purple)] max-w-xs pl-2"
           >
@@ -35,52 +35,55 @@ const { title } = Astro.props;
               class="w-5 h-5 inline align-baseline"
             />!
           </h1>
-          <p class="text-sm pt-4"></p>
-          <p class="text-sm pb-4">
+          <p class="text-sm p-4">
             Ich möchte Menschen für Technik begeistern und ihnen helfen ihre
             Ideen umsetzen. Deshalb leite Workshops oder unterstütze als
             Mentorin bei diversen Angeboten in Leipzig und Umgebung.
           </p>
-        </div>
 
-        <div class="flex flex-row mt-6">
-          <div
-            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300"
-          >
-            <a href="#" id="workshopsButton"
-              ><Tag classList="bg-[var(--purple)]">Workshops</Tag></a
+          <div class="flex flex-row pt-4 pb-12 sm:pt-6">
+            <div
+              class="-rotate-45 hover:scale-105 transition ease-in-out duration-300"
             >
-          </div>
-          <div
-            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
-          >
-            <a href="#" id="hackathonsButton"
-              ><Tag classList="bg-[var(--yellow)]">Hackathons</Tag></a
+              <a href="#" id="workshopsButton"
+                ><Tag classList="bg-[var(--purple)]">Workshops</Tag></a
+              >
+            </div>
+            <div
+              class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
             >
-          </div>
-          <div
-            class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
-          >
-            <a href="#" id="sonstigesButton"
-              ><Tag classList="bg-[var(--blue)]">Sonstiges</Tag></a
+              <a href="#" id="hackathonsButton"
+                ><Tag classList="bg-[var(--yellow)]">Hackathons</Tag></a
+              >
+            </div>
+            <div
+              class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
             >
+              <a href="#" id="sonstigesButton"
+                ><Tag classList="bg-[var(--blue)]">Sonstiges</Tag></a
+              >
+            </div>
           </div>
         </div>
 
         <Image
           src={me}
           alt="Image of Krissi with AR headset"
-          class="hidden sm:block mt-4 max-w-sm"
+          class="hidden md:block mt-4 max-w-sm"
         />
       </div>
 
-      <div class="col-span-4 xl:col-span-5 min-[2000px]:col-span-4 p-8 pb-20">
+      <div
+        class="col-span-4 xl:col-span-5 min-[2000px]:col-span-4 p-4 sm:p-8 pb-20"
+      >
         <slot />
       </div>
     </div>
 
-    <footer id="kontakt" class="bg-[var(--purple)] p-12 text-sm">
-      <div class="flex grid-4 justify-between w-80 mx-auto">
+    <footer id="kontakt" class="bg-[var(--purple)] p-4 sm:p-12 text-sm">
+      <div
+        class="flex flex-col sm:flex-row gap-3 justify-between sm:w-80 mx-auto"
+      >
         <div>
           <div
             class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"

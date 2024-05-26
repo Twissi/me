@@ -1,0 +1,45 @@
+---
+import Image from "./Image.astro";
+import {
+  images231120,
+  images231127,
+  images231204,
+  images231211,
+  images231218,
+  images240129,
+  images240226,
+  images240304,
+  images240318,
+  images240415,
+  images240422,
+  images240506,
+} from "../../content/lego-gta/images";
+
+const images = [
+  ...images231120,
+  ...images231127,
+  ...images231204,
+  ...images231211,
+  ...images231218,
+  ...images240129,
+  ...images240226,
+  ...images240304,
+  ...images240318,
+  ...images240415,
+  ...images240422,
+  ...images240506,
+];
+---
+
+<div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+  {
+    images.map((image) => (
+      <div class="break-inside-avoid-column">
+        <Image
+          src={`https://storage.abwesend.com/public/lego-ev3/${image.path}`}
+          description={image.description}
+        />
+      </div>
+    ))
+  }
+</div>

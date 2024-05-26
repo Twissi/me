@@ -1,0 +1,25 @@
+<div
+  class="fixed h-full w-full bg-white sm:bg-zinc-800/70 top-0 bottom-0 z-index:20 flex items-start sm:items-center sm:justify-center cursor-pointer p-4 sm:p-8 hidden"
+  id="modal"
+>
+  <div
+    class="flex flex-col-reverse md:flex-row bg-white border border-gray-200 rounded-b-lg md:rounded-none md:rounded-l-lg relative w-full lg:w-11/12 2xl:w-8/12"
+  >
+    <div class="h-min w-full">
+      <img
+        class="object-cover object-center rounded-b-lg md:rounded-none md:rounded-l-lg"
+        src=""
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<script>
+  const model = document.querySelector("#modal");
+  if (model) {
+    model.addEventListener("click", () => {
+      model.classList.add("hidden");
+    });
+  }
+</script>

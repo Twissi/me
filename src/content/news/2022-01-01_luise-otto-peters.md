@@ -5,7 +5,7 @@ location: Luise-Otto-Peters-Schule
 target: Schüler*innen
 ---
 
-2023 / 2024
+2022 - 2024
 
 Wöchentlicher Lego Mindstorm Kurs im Rahmen des Ganztagsangebotes.
 

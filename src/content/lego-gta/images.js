@@ -122,15 +122,15 @@ export const images231204 = [
 export const images231211 = [
   {
     path: "231211/IMG_3103.jpg",
-    description: "Linienfolger - kann an einer Linien entlang fahren",
+    description: "Kettenfahrzeug mit Sensoren",
   },
   {
     path: "231211/IMG_3104.jpg",
-    description: "Linienfolger - kann an einer Linien entlang fahren",
+    description: "Kettenfahrzeug mit Sensoren",
   },
   {
     path: "231211/IMG_3106.jpg",
-    description: "Linienfolger - kann an einer Linien entlang fahren",
+    description: "Kettenfahrzeug mit Sensoren",
   },
 ];
 
@@ -347,4 +347,38 @@ export const images240506 = [
     path: "240506/IMG_5361.jpeg",
     description: "Fußball-Roboter mit Fernbedienung",
   },
+];
+
+export const images240527 = [
+  {
+    path: "240527/IMG_5502.jpeg",
+    description:
+      "Musikroboter - dreht sich und spielt einen Ton für jeden farbigen Stein",
+  },
+  {
+    path: "240527/IMG_5503.jpeg",
+    description:
+      "Musikroboter - dreht sich und spielt einen Ton für jeden farbigen Stein",
+  },
+  {
+    path: "240527/IMG_5510.jpeg",
+    description:
+      "Musikroboter - dreht sich und spielt einen Ton für jeden farbigen Stein",
+  },
+  {
+    path: "240527/IMG_5504.jpeg",
+    description: "Kettenfahrzeug",
+  },
+  {
+    path: "240527/IMG_5505.jpeg",
+    description: "Kettenfahrzeug",
+  },
+  {
+    path: "240527/IMG_5506.jpeg",
+    description: "Kettenfahrzeug",
+  },
+  { path: "240527/IMG_5507.jpeg", description: "Kettenfahrzeug" },
+  { path: "240527/IMG_5508.jpeg", description: "Kettenfahrzeug" },
+  { path: "240527/IMG_5509.jpeg", description: "-" },
+  { path: "240527/IMG_5511.jpeg", description: "Roboter mit Fernsteuerung" },
 ];

@@ -1,6 +1,6 @@
 ---
 date: 2023-05-13
-title: Nullaufeins Workshop
+title: nullaufeins Workshop
 tags: ["workshops"]
 location: Basislager, Leipzig
 target: Erwachsene

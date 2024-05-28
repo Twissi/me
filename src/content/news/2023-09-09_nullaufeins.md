@@ -1,6 +1,6 @@
 ---
 date: 2023-09-09
-title: Nullaufeins Workshop
+title: nullaufeins Workshop
 tags: ["workshops"]
 location: Basislager, Leipzig
 target: Erwachsene

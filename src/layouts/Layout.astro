@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 
 import Tag from "../components/Tag.astro";
 import me from "../images/me.png";
+import Header from "./Header.astro";
 
 export interface Props {
   title: string;
@@ -13,18 +14,7 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="/styles/main.css" />
-    <title>{title}</title>
-  </head>
+  <Header title={title} />
   <body>
     <div
       class="grid grid-cols-1 md:grid-cols-6 bg-[url('/images/Weather-Meteor--Streamline-Pixel.svg')]"
@@ -141,111 +131,110 @@ const { title } = Astro.props;
         </div>
       </div>
     </footer>
+    <style is:global>
+      :root {
+        --purple: #8576ff;
+        --light-purple: #b2a4ff;
+        --workshops: #8576ff;
+        --yellow: #ffdeb4;
+        --hackathons: #ffdeb4;
+        --blue: #7bc9ff;
+        --other: #7bc9ff;
+        --light-green: #adff2f;
+        --text-color: #555d6b;
+      }
+      html {
+        font-family: -apple-system, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: var(--light-purple);
+      }
+    </style>
+
+    <script>
+      const workshopsButton = document.getElementById("workshopsButton");
+      const hackathonsButton = document.getElementById("hackathonsButton");
+      const otherButton = document.getElementById("sonstigesButton");
+      const workshopsCards = Array.from(
+        document.getElementsByClassName("workshops")
+      );
+      const hackathonsCards = Array.from(
+        document.getElementsByClassName("hackathons")
+      );
+      const otherCards = Array.from(document.getElementsByClassName("other"));
+
+      let workshopsEnabled = true;
+      let hackathonsEnabled = true;
+      let otherEnabled = true;
+
+      const update = () => {
+        workshopsCards.forEach((element) => {
+          element.classList.add("hidden");
+        });
+        hackathonsCards.forEach((element) => {
+          element.classList.add("hidden");
+        });
+        otherCards.forEach((element) => {
+          element.classList.add("hidden");
+        });
+
+        if (workshopsEnabled) {
+          workshopsCards.forEach((element) => {
+            element.classList.remove("hidden");
+          });
+        }
+        if (hackathonsEnabled) {
+          hackathonsCards.forEach((element) => {
+            element.classList.remove("hidden");
+          });
+        }
+        if (otherEnabled) {
+          otherCards.forEach((element) => {
+            element.classList.remove("hidden");
+          });
+        }
+      };
+
+      const reset = () => {
+        workshopsEnabled = true;
+        hackathonsEnabled = true;
+        otherEnabled = true;
+      };
+
+      workshopsButton?.addEventListener("click", (event) => {
+        event.preventDefault;
+        if (workshopsEnabled && !otherEnabled && !hackathonsEnabled) {
+          reset();
+        } else {
+          workshopsEnabled = true;
+          otherEnabled = false;
+          hackathonsEnabled = false;
+        }
+        update();
+      });
+      hackathonsButton?.addEventListener("click", (event) => {
+        event.preventDefault;
+        if (hackathonsEnabled && !workshopsEnabled && !otherEnabled) {
+          reset();
+        } else {
+          hackathonsEnabled = true;
+          otherEnabled = false;
+          workshopsEnabled = false;
+        }
+        update();
+      });
+      otherButton?.addEventListener("click", (event) => {
+        event.preventDefault;
+        if (otherEnabled && !hackathonsEnabled && !workshopsEnabled) {
+          reset();
+        } else {
+          otherEnabled = true;
+          workshopsEnabled = false;
+          hackathonsEnabled = false;
+        }
+        update();
+      });
+    </script>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --purple: #8576ff;
-    --light-purple: #b2a4ff;
-    --workshops: #8576ff;
-    --yellow: #ffdeb4;
-    --hackathons: #ffdeb4;
-    --blue: #7bc9ff;
-    --other: #7bc9ff;
-    --light-green: #adff2f;
-    --text-color: #555d6b;
-  }
-  html {
-    font-family: -apple-system, "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--light-purple);
-  }
-</style>
-
-<script>
-  const workshopsButton = document.getElementById("workshopsButton");
-  const hackathonsButton = document.getElementById("hackathonsButton");
-  const otherButton = document.getElementById("sonstigesButton");
-  const workshopsCards = Array.from(
-    document.getElementsByClassName("workshops")
-  );
-  const hackathonsCards = Array.from(
-    document.getElementsByClassName("hackathons")
-  );
-  const otherCards = Array.from(document.getElementsByClassName("other"));
-
-  let workshopsEnabled = true;
-  let hackathonsEnabled = true;
-  let otherEnabled = true;
-
-  const update = () => {
-    workshopsCards.forEach((element) => {
-      element.classList.add("hidden");
-    });
-    hackathonsCards.forEach((element) => {
-      element.classList.add("hidden");
-    });
-    otherCards.forEach((element) => {
-      element.classList.add("hidden");
-    });
-
-    if (workshopsEnabled) {
-      workshopsCards.forEach((element) => {
-        element.classList.remove("hidden");
-      });
-    }
-    if (hackathonsEnabled) {
-      hackathonsCards.forEach((element) => {
-        element.classList.remove("hidden");
-      });
-    }
-    if (otherEnabled) {
-      otherCards.forEach((element) => {
-        element.classList.remove("hidden");
-      });
-    }
-  };
-
-  const reset = () => {
-    workshopsEnabled = true;
-    hackathonsEnabled = true;
-    otherEnabled = true;
-  };
-
-  workshopsButton?.addEventListener("click", (event) => {
-    event.preventDefault;
-    if (workshopsEnabled && !otherEnabled && !hackathonsEnabled) {
-      reset();
-    } else {
-      workshopsEnabled = true;
-      otherEnabled = false;
-      hackathonsEnabled = false;
-    }
-    update();
-  });
-  hackathonsButton?.addEventListener("click", (event) => {
-    event.preventDefault;
-    if (hackathonsEnabled && !workshopsEnabled && !otherEnabled) {
-      reset();
-    } else {
-      hackathonsEnabled = true;
-      otherEnabled = false;
-      workshopsEnabled = false;
-    }
-    update();
-  });
-  otherButton?.addEventListener("click", (event) => {
-    event.preventDefault;
-    if (otherEnabled && !hackathonsEnabled && !workshopsEnabled) {
-      reset();
-    } else {
-      otherEnabled = true;
-      workshopsEnabled = false;
-      hackathonsEnabled = false;
-    }
-    update();
-  });
-</script>

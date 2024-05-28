@@ -2,7 +2,7 @@
 date: 2024-05-21
 title: "SprINGbreak: IT Feriencamp"
 tags: ["workshops"]
-location: Fachhochschule Köthen
+location: Hochschule Anhalt
 target: Jugendliche ab der 9.Klasse
 ---
 

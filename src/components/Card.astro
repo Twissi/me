@@ -30,17 +30,17 @@ const target = entry.data.target;
           </span>
         ) : null
       }
-      <h2 class="text-2xl leading-8 font-bold mb-3 text-[color:#b2a4ff]">
+      <h2 class="text-3xl leading-8 font-bold mb-3 text-[color:#b2a4ff]">
         {title}
       </h2>
 
-      <article class="text-sm leading-6">
+      <article class="text-md leading-6">
         <Content />
       </article>
 
       {
         target || location || date ? (
-          <div class="mt-6">
+          <div class="mt-6 text-lg">
             {target ? (
               <div class="flex items-center text-gray-600 mb-2">
                 <img
@@ -48,7 +48,7 @@ const target = entry.data.target;
                   class="w-5 h-5"
                   alt="Icon eines Roboterkopfes"
                 />
-                <div class="text-sm pl-1">{target}</div>
+                <div class="text-md pl-1">{target}</div>
               </div>
             ) : null}
             {location ? (
@@ -58,7 +58,7 @@ const target = entry.data.target;
                   class="w-5 h-5"
                   alt="Icon einer Karte mit Stecknadel"
                 />
-                <div class="text-sm pl-1">{location}</div>
+                <div class="text-md pl-1">{location}</div>
               </div>
             ) : null}
             {date ? (
@@ -69,7 +69,7 @@ const target = entry.data.target;
                   alt="Icon eines Kalenders"
                 />
 
-                <div class="text-sm pl-1">
+                <div class="text-md pl-1">
                   <time datetime={date.toISOString()}>
                     {date.toLocaleString("de", {
                       day: "numeric",
@@ -88,9 +88,6 @@ const target = entry.data.target;
 </div>
 
 <style is:global define:vars={{ tagColor }}>
-  h2 {
-    word-break: break-all;
-  }
   article a {
     color: var(--purple);
     text-decoration: underline var(--purple);

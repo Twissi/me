@@ -3,9 +3,9 @@ date: 2024-10-07
 title: Inspirata Ferienkurs
 tags: ["workshops"]
 location: Inspirata, Leipzig
-target: Mädchen (11-16 Jahre)
+target: Jugendliche (11-16 Jahre)
 ---
 
-Termin noch nicht bekannt (wahrscheinlich in den Herbstferien in Sachsen).
+07.-09.10. - https://mint-aktiv.com/veranstaltung/meine-pflanze-flucht
 
-https://mint-aktiv.com/veranstaltung/fluchende-planze-girls-only/
+14.-16.10. - https://mint-aktiv.com/veranstaltung/meine-pflanze-flucht-2

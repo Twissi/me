@@ -6,4 +6,3 @@ tags: ["other"]
 
 Konzept, Design und Umsetzung
 
-https://connect.hackerinnen.space

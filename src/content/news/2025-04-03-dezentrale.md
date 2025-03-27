@@ -1,5 +1,5 @@
 ---
-date: 2025-03-03
+date: 2025-04-03
 title: Girls Day
 tags: ["workshops"]
 location: Dezentrale, Leipzig

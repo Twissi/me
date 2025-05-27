@@ -1,12 +1,13 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
 
 interface Props {
   entry: CollectionEntry<"news">;
 }
 
 const { entry }: Props = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const tagColor = `var(--${entry.data.tags[0]})`;
 const date = entry.data.date;
 const location = entry.data.location;

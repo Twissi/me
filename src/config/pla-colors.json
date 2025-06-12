@@ -1,0 +1,330 @@
+{
+  "basic": [
+    {
+      "name": "Jade-Weiß",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/f629244b269f462e9583938ae40bc0dd/a0346f58bf564b47ad322f6551f1c32b.media",
+      "enabled": true
+    },
+    {
+      "name": "Beige",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/cae88d517bac44b89fd1e895342c10b8/fa231273753d477b9d99afa19761f820.media",
+      "enabled": true
+    },
+    {
+      "name": "Hellgrau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/a9303ce2d77d446ba232266663653ffb/b7c9db2942374e2793d9865461076ac4.png",
+      "enabled": false
+    },
+    {
+      "name": "Gelb",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/aaff6c730b9f4a6f8b872a8ab5dbceef/3b0e7a2600f44088b06cb185a3f87e04.media",
+      "enabled": false
+    },
+    {
+      "name": "Sonnenblumen-Gelb",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/570aa349cd6c4a3894325a8eeb3537eb/f84eee46ecb848e69c2e6a5c197a9958.png",
+      "enabled": false
+    },
+    {
+      "name": "Gold",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/3f8a303a66f2473f97dce2b8e6a32ae4/969f0c8921214ece8dbced65341fcbce.media",
+      "enabled": false
+    },
+    {
+      "name": "Kürbis-Orange",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/c2df3a9ff9c246468f0e23237ee3389c/ff733c26d9be457fb44ee270f2720827.png",
+      "enabled": false
+    },
+    {
+      "name": "Orange",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/933af893081d4049b671b88bb73dbe5d/3b7d85f463734924842171fab890a603.media",
+      "enabled": false
+    },
+    {
+      "name": "Hellgrün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/752c149f51c4444096a9d1ec68d98787/5578164bff51480a9c550ef390348ec1.png",
+      "enabled": true
+    },
+    {
+      "name": "Bambusgrün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/2be1d6005e8b47309787ce5ca8d6b1b1/7044786b85d44df9bbe872c6e5d87518.media",
+      "enabled": true
+    },
+    {
+      "name": "Mistelzweig-Grün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/01f4a69705be47d28ebb9e64138511c1/21f4f3191dfd4fd58f68fdb8b2be4ec4.media",
+      "enabled": true
+    },
+    {
+      "name": "Pink",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/6686f81c9d744c7dbb5c2656613cfa58/16d81c82e3ac470c9abccfdda3e98ded.media",
+      "enabled": false
+    },
+    {
+      "name": "Heißes Pink",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/f312337e9b054b3dbc562c4ce84bd9a3/ed844344991348f79a91dfe9aeba362e.png",
+      "enabled": false
+    },
+    {
+      "name": "Magenta",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/4ad6ec1b6d5d4feead844261b2ca659a/e09bc62c304443d8b33302b42f8ef2ca.media",
+      "enabled": false
+    },
+    {
+      "name": "Rot",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/ca98847eca2d4d3b9bedcbf1567f9069/377d91b1263f40968ca1973b0d2839e4.media",
+      "enabled": true
+    },
+    {
+      "name": "Kastanienrot",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/49e16540bef940e49c1fbf1e07c59f7b/6ddd230906194a7fa5403e2cc1d7ae77.png",
+      "enabled": false
+    },
+    {
+      "name": "Lila",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/588956a2685f49fca7a83d05bbc55fde/8324030333a34c54b8472e5682d19f3f.media",
+      "enabled": true
+    },
+    {
+      "name": "Indigo-Violett",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/70a2bd250ad54d568038e40e41c6c058/d65aebf923b840af881f23286fb7d9b3.png",
+      "enabled": false
+    },
+    {
+      "name": "Türkis",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/37c33cefed344e838b6061da9cb2931e/9f0327d603c345ac99fcb795cc783dff.png",
+      "enabled": false
+    },
+    {
+      "name": "Cyan",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/f3c29d42ffd84019bd9bd5dd010c20ed/d665a3540d334035abc278b0b80e4898.media",
+      "enabled": false
+    },
+    {
+      "name": "Kobaltblau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/2d8f3b0e1c5d49d89948daabdf195bb1/abd43099726847d6b189bec773ef1833.png",
+      "enabled": false
+    },
+    {
+      "name": "Blau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/d992a2843093493eb39af6cb476fbe1d/0cbb7037758240b4873f9a90ab4dbe10.media",
+      "enabled": false
+    },
+    {
+      "name": "Braun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/7a90b883708248e3be71e3055a05d18b/ae017fb32657451aaa0eecec9ad1b748.media",
+      "enabled": false
+    },
+    {
+      "name": "Kakaobraun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/b723f31901004aeb8d94630217720cb5/91d13e7d3dd54a89948200e82353998f.png",
+      "enabled": false
+    },
+    {
+      "name": "Bronze",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/0bafa7cc770b4dc08baf9c2d5ee89f60/8b75222ce246480184025993a40b948b.media",
+      "enabled": false
+    },
+    {
+      "name": "Grau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/b8bb9d54dbfc4d4da37326cc026315ef/d870efeaced648c6a3f390db1f55f725.media",
+      "enabled": false
+    },
+    {
+      "name": "Silber",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/651ec57a4b894ac0abae064c8e3ff73a/8b789e9f61b14b54a248f813ea523191.media",
+      "enabled": false
+    },
+    {
+      "name": "Blue Grey",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/adb9eb251460438498b46618a1784f0b/4e3637d99a73483bab1ce84fd7628a36.media",
+      "enabled": true
+    },
+    {
+      "name": "Dunkelgrau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/ad0d5d8c16b246f58fde8a3866ac9fa7/03aedbaaff8943f892b58438f98cac89.png",
+      "enabled": false
+    },
+    {
+      "name": "Schwarz",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/3e8da2bfb48c44f5a65bf3f8f723f6ba/352e8e214fb4462ba7e6b1381c32fe9f.media",
+      "enabled": true
+    }
+  ],
+  "translucent": [
+    {
+      "name": "Helles Jade",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/26733b7f84884d3a8a9a02fbe93f0f15/Rectangle_4554.png",
+      "enabled": true
+    }
+  ],
+  "matte": [
+    {
+      "name": "Elfenbeinweiß",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/13f15616297b468a9437ad1f7f3ec3fe/c8693a709e0442f384bad600d03fe0c3.media",
+      "enabled": true
+    },
+    {
+      "name": "Knochenweiß",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/fe1aeb8b3e2d49679beb1843cf87d048/Rectangle_4535.png",
+      "enabled": false
+    },
+    {
+      "name": "Zitronengelb",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/b9a35f57b62940239231925123ea510f/147b2c8c833e4625a552584ce4ac94e2.media",
+      "enabled": true
+    },
+    {
+      "name": "Mandarine-Orange",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/c0ae19a4dde1487792bc8faf27a698d4/50858ad786c3414daaacb1f29eead215.media",
+      "enabled": false
+    },
+    {
+      "name": "Sakura-Pink",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/9bab85655c1445308fbcb56b92b21e5e/a54f8229fa6e4c2eb714c34972fa6a82.media",
+      "enabled": true
+    },
+    {
+      "name": "Flieder-Violett",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/3766ff856c9f46da87f998ebb643e5d7/47be9dad231d4e7c9d84086cd677e8dd.media",
+      "enabled": false
+    },
+    {
+      "name": "Pflaume",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/01c4128b7a004c56a71b81d433b08292/Rectangle_4537.png",
+      "enabled": false
+    },
+    {
+      "name": "Scharlachrot",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/8e0c8191b01441069edefe00fc405e59/e97d6f747715417d8c2d5c0aeb2554f0.media",
+      "enabled": false
+    },
+    {
+      "name": "Dunkelrot",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/dfdf2e6ed6324710b3fcd01b58827a60/16a6cddd38c5427fbe0c043acf4fdec4.media",
+      "enabled": false
+    },
+    {
+      "name": "Apfelgrün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/3b3b0d30e490435c945fb283606ad774/Rectangle_4539.png",
+      "enabled": false
+    },
+    {
+      "name": "Grasgrün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/4b4ed908276a4420b6eda1a6efb5247a/f375a162834a4dd6ad40b3d3cd2bd23b.media",
+      "enabled": false
+    },
+    {
+      "name": "Dunkelgrün",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/5bccf7ad0e604ea691343a0bf0cc2dee/cf87d8d749a64146abd1f02c4a9a79ad.media",
+      "enabled": false
+    },
+    {
+      "name": "Eisblau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/7b34b82fdf2f4abdbc25bf4f0f99fc0a/c07627cfd70f4ccfa787d4d12dad6d4b.media",
+      "enabled": false
+    },
+    {
+      "name": "Himmelblau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/20daf96cbd434d05b910847f7663c82c/Rectangle_4540.png",
+      "enabled": false
+    },
+    {
+      "name": "Marineblau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/c948001284044939b0e8565b687537a8/c3f24581020141108a78632680271e09.media",
+      "enabled": false
+    },
+    {
+      "name": "Dunkelblau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/1ac27cb3f8584843b25a64cee769437f/353e1dc2aced4c808db0c85d394bbee6.media",
+      "enabled": true
+    },
+    {
+      "name": "Wüstenbraun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/2ab2e16d82ac493f9bab6ec350a57dd9/d05a32c4b098422db92848e2b4d9c90e.media",
+      "enabled": false
+    },
+    {
+      "name": "Milchkaffee-Braun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/5fe8df3185354f88badf20e5067437fb/80e94033ac314bb58c08c48a93156c8b.media",
+      "enabled": false
+    },
+    {
+      "name": "Karamell",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/855926931a7f4e3fbcf7d7bc003a64c1/Rectangle_4541.png",
+      "enabled": false
+    },
+    {
+      "name": "Terrakotta",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/e32d2b8704b74e1b9e0e1529496eb3d2/Rectangle_4542.png",
+      "enabled": false
+    },
+    {
+      "name": "Dunkelbraun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/9f6adf23212a4ef694f90e9afe9820e5/926ff77d477d4f6c9fcb8c76fdefa7b2.media",
+      "enabled": false
+    },
+    {
+      "name": "Dunkel-Schokoladenbraun",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/c242d340094d4275baae53041edb0ed3/Rectangle_4536.png",
+      "enabled": false
+    },
+    {
+      "name": "Aschgrau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/d18055ca338e4c35a51b48351dac19a2/bac67500773d4a7fbd285fbfc2aaa9a7.media",
+      "enabled": false
+    },
+    {
+      "name": "Nardo-Grau",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/d2a8851055cb4ba4b53f022a6eddf451/Rectangle_4543.png",
+      "enabled": false
+    },
+    {
+      "name": "Kohlschwarz",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/c0dc18dc3dc7497986cae565172fb258/9873c26227394682ab9270a8e0868f0f.media",
+      "enabled": true
+    }
+  ],
+  "gradient": [
+    {
+      "name": "Zuckerwatten-Wolke",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/93e5dc5762b0493da92fe1060113fc67/cbf0d5d248d34251b14cc4cc7368b1d6.jpg",
+      "enabled": true
+    },
+    {
+      "name": "Blaubeere-Bubblegum",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/34d80fb6de46406fb6aca47aefb441ab/08482814a898436781578e1c09753d30.jpg",
+      "enabled": false
+    },
+    {
+      "name": "Zitrus-Pink",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/a135cf4c8ab54558915f0d735515a245/524cd0a1c2064deea57e7affdfa7c964.jpg",
+      "enabled": false
+    },
+    {
+      "name": "Minze-Limette",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/de291383a023463498e4bbd1ddffe273/b2cd66c02e9c4f8296b02adb6f0b8c3d.jpg",
+      "enabled": false
+    },
+    {
+      "name": "Leuchtende Abenddämmerung",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/6f996ee15dba4fbb85808bedffba0dcf/af05eb76bdc34640a8ce9a226dda64a8.png",
+      "enabled": false
+    },
+    {
+      "name": "Meer und Wiese",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/87c1753461b14fd89b3bbecf9c5643d0/c4c45c8388594ca3bb9dd615ffa694fc.media",
+      "enabled": false
+    },
+    {
+      "name": "Arktisches Flüstern",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/08b74ec3ec1947db973dc9f598c86815/efdbc3bf2ca74b2587a5db232d467b98.media",
+      "enabled": false
+    },
+    {
+      "name": "Sonnenbrise",
+      "imageUrl": "https://store.bblcdn.eu/s8/default/10bde563d06a41feb120eda5bbbec54b/21d2138bdb664740bc095f3834a7ff6a.media",
+      "enabled": false
+    }
+  ]
+} 

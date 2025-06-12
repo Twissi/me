@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout_plane.astro";
+import plaColors from "../config/pla-colors.json";
+
+const { basic, matte, gradient, translucent } = plaColors;
+const enabledBasicColors = basic.filter(color => color.enabled);
+const enabledMatteColors = matte.filter(color => color.enabled);
+const enabledGradientColors = gradient.filter(color => color.enabled);
+const enabledTranslucentColors = translucent.filter(color => color.enabled);
+---
+
+<Layout title="Kristin Fritsch" noBgImage>
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">PLA Basic</h1>
+    <ul
+      role="list"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+    >
+      {enabledBasicColors.map((color) => (
+        <li class="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+          <div 
+            class="w-16 h-16 rounded-full mb-2 bg-cover bg-center"
+            style={`background-image: url(${color.imageUrl})`}
+          />
+          <span class="text-sm text-center">{color.name}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h1 class="text-3xl font-bold mb-8 mt-16">PLA Matte</h1>
+    <ul
+      role="list"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+    >
+      {enabledMatteColors.map((color) => (
+        <li class="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+          <div 
+            class="w-16 h-16 rounded-full mb-2 bg-cover bg-center"
+            style={`background-image: url(${color.imageUrl})`}
+          />
+          <span class="text-sm text-center">{color.name}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h1 class="text-3xl font-bold mb-8 mt-16">PLA Basic Gradient</h1>
+    <ul
+      role="list"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+    >
+      {enabledGradientColors.map((color) => (
+        <li class="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+          <div 
+            class="w-16 h-16 rounded-full mb-2 bg-cover bg-center"
+            style={`background-image: url(${color.imageUrl})`}
+          />
+          <span class="text-sm text-center">{color.name}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h1 class="text-3xl font-bold mb-8 mt-16">PLA Translucent</h1>
+    <ul
+      role="list"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+    >
+      {enabledTranslucentColors.map((color) => (
+        <li class="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+          <div 
+            class="w-16 h-16 rounded-full mb-2 bg-cover bg-center"
+            style={`background-image: url(${color.imageUrl})`}
+          />
+          <span class="text-sm text-center">{color.name}</span>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Layout>

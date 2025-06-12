@@ -3,16 +3,17 @@ import Header from "./Header.astro";
 
 export interface Props {
   title: string;
+  noBgImage: boolean;
 }
 
-const { title } = Astro.props;
+const { title, noBgImage } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <Header title={title} />
   <body>
-    <div class="bg-[url('/images/Weather-Meteor--Streamline-Pixel.svg')] p-6">
+    <div class={noBgImage ? "" : "bg-[url('/images/Weather-Meteor--Streamline-Pixel.svg')] p-6"}>
       <slot />
     </div>
     <style is:global>

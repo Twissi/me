@@ -6,6 +6,6 @@ location: Inspirata, Leipzig
 target: Mädchen (10-14 Jahre)
 ---
 
-4.8. – 6.8.25, 10-13 Uhr
+04.08. – 06.08.25, 10-13 Uhr
 
 https://mint-aktiv.com/veranstaltung/fluchende-planze-ferien/

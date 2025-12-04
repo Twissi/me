@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import Tag from "../components/Tag.astro";
 import me from "../images/me.png";
 import Header from "./Header.astro";
+import "../styles/global.css";
 
 export interface Props {
   title: string;
@@ -20,9 +21,9 @@ const { title } = Astro.props;
       class="grid grid-cols-1 md:grid-cols-6 bg-[url('/images/Weather-Meteor--Streamline-Pixel.svg')]"
     >
       <div class="col-span-2 xl:col-span-1 p-4 sm:p-8 sm:pr-0">
-        <div class="bg-[color:var(--light-purple)]">
+        <div class="bg-(--light-purple)">
           <h1
-            class="text-3xl font-semibold bg-gradient-to-r from-[color:var(--purple)] max-w-xs pl-2"
+            class="text-3xl font-semibold bg-linear-to-r from-(--purple) max-w-xs pl-2"
           >
             Hallo <img
               src="/images/Interface-Essential-Global-Public--Streamline-Pixel.svg"
@@ -41,21 +42,21 @@ const { title } = Astro.props;
               class="-rotate-45 hover:scale-105 transition ease-in-out duration-300"
             >
               <a href="#" id="workshopsButton"
-                ><Tag classList="bg-[var(--purple)]">Workshops</Tag></a
+                ><Tag classList="bg-(--purple)">Workshops</Tag></a
               >
             </div>
             <div
               class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
             >
               <a href="#" id="hackathonsButton"
-                ><Tag classList="bg-[var(--yellow)]">Hackathons</Tag></a
+                ><Tag classList="bg-(--yellow)">Hackathons</Tag></a
               >
             </div>
             <div
               class="-rotate-45 hover:scale-105 transition ease-in-out duration-300 -ml-6"
             >
               <a href="#" id="sonstigesButton"
-                ><Tag classList="bg-[var(--blue)]">Sonstiges</Tag></a
+                ><Tag classList="bg-(--blue)">Sonstiges</Tag></a
               >
             </div>
           </div>
@@ -75,13 +76,13 @@ const { title } = Astro.props;
       </div>
     </div>
 
-    <footer id="kontakt" class="bg-[var(--purple)] p-4 sm:p-12 text-md">
+    <footer id="kontakt" class="bg-(--purple) p-4 sm:p-12 text-md">
       <div
         class="flex flex-col sm:flex-row gap-3 justify-between sm:w-80 mx-auto"
       >
         <div>
           <div
-            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
           >
             Code
           </div>
@@ -94,7 +95,7 @@ const { title } = Astro.props;
         </div>
         <div>
           <div
-            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
           >
             Social
           </div>
@@ -113,7 +114,7 @@ const { title } = Astro.props;
         </div>
         <div>
           <div
-            class="bg-gradient-to-r from-[color:var(--light-purple)] p-1 mb-2"
+            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
           >
             Rechtliches
           </div>

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  /* Font families */
+  --font-family-sans: "OpenSans", ui-sans-serif, system-ui, sans-serif;
+}
+
 @font-face {
   font-family: "OpenSans";
   src: url("/fonts/OpenSans-Medium.ttf") format("ttf");

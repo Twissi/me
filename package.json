@@ -8,16 +8,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.17.3",
-    "tailwindcss": "^4.1.17"
+    "@astrojs/mdx": "^5.0.3",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.1.2",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "typescript": "^5.9.3"
+    "@astrojs/check": "^0.9.8"
   }
 }

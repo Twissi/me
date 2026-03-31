@@ -8,4 +8,4 @@ target: Mädchen (12-18 Jahre)
 
 Meine Pflanze flucht - Workshop beim MINTA\*Hackday
 
-https://jugendhackt.org/events/dresden/
+https://jugendhackt.org/blog/minta-hackday-2024-in-dresden/

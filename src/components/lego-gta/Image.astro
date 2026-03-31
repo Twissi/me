@@ -14,7 +14,7 @@ const { src, description } = Astro.props;
     src={src}
     alt={description}
     loading="lazy"
-    xtransition:name="cover-image"
+    transition:name="cover-image"
   />
   <p class="p-4 font-normal text-gray-700">{description}</p>
 </div>
@@ -25,9 +25,9 @@ const { src, description } = Astro.props;
 
   if (model && window.matchMedia("(min-width: 768px)").matches) {
     link.forEach((img) => {
-      img.addEventListener("click", (img) => {
+      img.addEventListener("click", (event) => {
         model.classList.remove("hidden");
-        model.querySelectorAll("img")[0].src = img.target.src;
+        model.querySelectorAll("img")[0].src = (event.target as HTMLImageElement).src;
       });
     });
   }

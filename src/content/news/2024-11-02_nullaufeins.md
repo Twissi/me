@@ -5,6 +5,6 @@ tags: ["workshops"]
 location: Ostbüro, Leipzig
 ---
 
-"Meine Pflanze flucht" - Workshop
+Meine Pflanze flucht - Workshop
 
 https://nullaufeins.org/de/workshops/

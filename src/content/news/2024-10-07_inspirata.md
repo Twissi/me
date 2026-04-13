@@ -6,4 +6,8 @@ location: Inspirata, Leipzig
 target: Jugendliche (11-16 Jahre)
 ---
 
-14.-16.10. - https://mint-aktiv.com/veranstaltung/meine-pflanze-flucht-2
+14.-16.10.
+
+Meine Pflanze flucht - Workshop 
+
+https://mint-aktiv.com/veranstaltung/meine-pflanze-flucht-2

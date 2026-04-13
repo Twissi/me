@@ -8,6 +8,6 @@ target: Mädchen, junge Frauen u. diverse Personen (10-18 Jahre)
 
 Workshopreihe Von Hacker\*in zu Hacker\*in.
 
-Pflanze flucht Workshop
+Meine Pflanze flucht - Workshop
 
 www.eigenbaukombinat.de/jugendworkshops/

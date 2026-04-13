@@ -5,7 +5,7 @@ location: Basislager, Leipzig
 target: Erwachsene
 ---
 
-2019 - heute
+2019 - 2026
 
 Orga-Team des wöchentlichen Meetups OpenTechSchool
 

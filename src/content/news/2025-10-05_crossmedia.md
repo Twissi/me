@@ -6,5 +6,7 @@ location: Zentralbibliothek, Dresden
 target: Mädchen (10-15 Jahre)
 ---
 
+Pflanzen Tamagotchi Workshop
+
 https://crossmediatour.de/kurs/baue-dein-eigenes-pflanzen-tamagotchi/?select=4882
 

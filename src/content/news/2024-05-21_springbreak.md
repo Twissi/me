@@ -6,6 +6,6 @@ location: Hochschule Anhalt
 target: Jugendliche ab der 9.Klasse
 ---
 
-"Meine Pflanze flucht" - Workshop
+Meine Pflanze flucht - Workshop
 
 https://www.lernlabore-anhalt.de/kurse/camps/springbreak-it-feriencamp-anhalt/

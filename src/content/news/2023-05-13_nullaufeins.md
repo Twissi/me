@@ -6,6 +6,6 @@ location: Basislager, Leipzig
 target: Erwachsene
 ---
 
-"Meine Pflanze flucht" - Workshop
+Meine Pflanze flucht - Workshop
 
 https://nullaufeins.org/de/workshops/

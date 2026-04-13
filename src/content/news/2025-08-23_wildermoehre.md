@@ -6,5 +6,5 @@ location: Wilde Möhre, Calau
 target: Erwachsene
 ---
 
-Glow Up: LED-Schmuck
+Glow Up: LED-Schmuck Workshop
 

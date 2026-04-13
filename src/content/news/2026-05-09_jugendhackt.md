@@ -6,6 +6,6 @@ location: Pi-Haus, Freiberg
 target: Mädchen, junge Frauen u. diverse Personen (12-18 Jahre)
 ---
 
-Workshop beim MINTA\*Hackday Freiberg, 10-20 Uhr
+Ich & KI – ein Zine-Workshop
 
 https://jugendhackt.org/events/dresden/minta-hackday-freiberg/

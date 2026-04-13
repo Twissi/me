@@ -8,4 +8,6 @@ target: Mädchen (10-14 Jahre)
 
 16.02. – 18.02.26, 10-14 Uhr
 
+Pflanzen Tamagotchi Workshop
+
 https://www.inspirata.de/veranstaltung/pflanzen-tamagotchi-3-tage-ferienkurs-girls-only/

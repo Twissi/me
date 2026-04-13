@@ -6,3 +6,4 @@ location: Dezentrale, Leipzig
 target: Mädchen und junge Frauen (10-18 Jahre)
 ---
 
+3D Druck Workshop 

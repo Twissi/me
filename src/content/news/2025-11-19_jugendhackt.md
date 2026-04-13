@@ -6,5 +6,7 @@ location: Görlitz
 target: Jugendliche (12-18 Jahre)
 ---
 
+Pflanzen Tamagotchi Workshop
+
 https://jugendhackt.org/events/dresden/hackday-goerlitz/
 

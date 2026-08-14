@@ -1,13 +1,13 @@
 ---
-date: 2026-06-06
+date: 2026-08-06
 title: Open Lab Thekla
 tags: ["workshops"]
 location: Open Lab Thekla, Leipzig
 target: Jugendliche (10-15 Jahre)
 ---
 
-06.06. – 10.06.26, 11-15 Uhr
+ab 18.9. wöchentlich
 
-Pflanzen Tamagotchi Workshop (Calliope)
+Youth Code und Girls\* Code - Coding Workshops für Jugendliche
 
 https://www.instagram.com/openlab_thekla/

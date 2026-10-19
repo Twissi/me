@@ -31,10 +31,11 @@ const { title } = Astro.props;
               alt="Icon der Erde"
             />!
           </h1>
-          <p class="text-lg p-4">
-            Ich möchte Menschen für Technik begeistern und ihnen helfen ihre
-            Ideen umsetzen. Deshalb leite ich Workshops oder unterstütze als
-            Mentorin bei diversen Angeboten in Leipzig und Umgebung.
+          <p class="text-md font-semibold p-4">
+            Ich liebe es, Menschen für Technik zu begeistern, gemeinsam Neues zu
+            entdecken und aus verrückten Ideen echte Projekte zu machen. In
+            Workshops und als Mentorin unterstütze ich Neugierige, Tüftler:innen
+            und kreative Köpfe in Leipzig und Umgebung.
           </p>
 
           <div class="flex flex-row pt-4 pb-12 sm:pt-6">
@@ -81,11 +82,7 @@ const { title } = Astro.props;
         class="flex flex-col sm:flex-row gap-3 justify-between sm:w-80 mx-auto"
       >
         <div>
-          <div
-            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
-          >
-            Code
-          </div>
+          <div class="bg-linear-to-r from-(--light-purple) p-1 mb-2">Code</div>
           <a
             href="http://github.com/twissi"
             target="_blank"
@@ -94,9 +91,7 @@ const { title } = Astro.props;
           ><br />
         </div>
         <div>
-          <div
-            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
-          >
+          <div class="bg-linear-to-r from-(--light-purple) p-1 mb-2">
             Social
           </div>
           <a
@@ -113,9 +108,7 @@ const { title } = Astro.props;
           ><br />
         </div>
         <div>
-          <div
-            class="bg-linear-to-r from-(--light-purple) p-1 mb-2"
-          >
+          <div class="bg-linear-to-r from-(--light-purple) p-1 mb-2">
             Rechtliches
           </div>
           <a
@@ -154,10 +147,10 @@ const { title } = Astro.props;
       const hackathonsButton = document.getElementById("hackathonsButton");
       const otherButton = document.getElementById("sonstigesButton");
       const workshopsCards = Array.from(
-        document.getElementsByClassName("workshops")
+        document.getElementsByClassName("workshops"),
       );
       const hackathonsCards = Array.from(
-        document.getElementsByClassName("hackathons")
+        document.getElementsByClassName("hackathons"),
       );
       const otherCards = Array.from(document.getElementsByClassName("other"));
 

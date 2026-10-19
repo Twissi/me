@@ -1,6 +1,6 @@
 ---
 date: 2026-10-24
-title: Crossmedia
+title: Pflanzen Tamagotchi
 tags: ["workshops"]
 location: Zentralbibliothek, Dresden
 target: Mädchen (10-15 Jahre)

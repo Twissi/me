@@ -6,6 +6,8 @@ location: Wiederschön, Leipzig
 target: Erwachsene
 ---
 
-16 - 19 Uhr
+3D Druck Workshop, 16 - 19 Uhr
 
 https://wiederschoen-leipzig.de
+
+https://aufbauwerk-leipzig.com/workshops-im-wiederschoen/
